@@ -1,0 +1,91 @@
+.Footer {
+    min-height: 100px;
+    width: 100%;
+    padding: 30px 10% 30px 10%;
+    margin-top: 50px;
+    border-top: 1px solid rgb(158, 161, 163);
+    
+    > p {
+        margin-top: 50px;
+        text-align: center;
+        color: rgb(158, 161, 163);
+    }
+}
+
+.footer_info_container {
+    display: flex;
+    
+    .footer_tels_container {
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+        width: 15%;
+        
+        .footer_tels {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    
+    .footer_address_container {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        gap: 15px;
+        
+        p {
+            width: 70%;
+        }
+    }
+    
+    .footer_contacts_container {
+        display: flex;
+        width: 15%;
+        gap: 15px;
+        justify-content: center;
+        
+        > div {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            
+            .footer_contacts_icons {
+                margin-top: 10px;
+                a {
+                    margin-right: 15px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    
+    .footer_developers_container {
+        width: 20%;
+        display: flex;
+        gap: 15px;
+        justify-content: flex-end;
+        align-items: flex-start;
+        
+        > div {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        img {
+            width: 40px;
+            height: 40px;
+        }
+        
+        a {
+            cursor: pointer;
+            font-weight: 600;
+            text-decoration: underline;
+            transition: all 500ms ease;
+            color: #000;
+            &:hover {
+                color: var(--appMainColor);
+            }
+        }
+    }
+}

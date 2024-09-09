@@ -1,0 +1,104 @@
+@import '../../AppStyles.css';
+
+.Navbar {
+    width: 100%;
+    background-color: var(--navbarBgColor);
+    padding: 20px 10% 15px 10%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    align-items: center;
+}
+
+.navbar_logo_container {
+    width: 120px;
+    height: 60px;
+    text-align: start;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+    .navbar_logo {
+        height: 100%;
+    }
+    
+    .navbar_logo2 {
+        height: 50%;
+    }
+}
+
+.navbar_links_container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    
+    .navbar_link {
+        text-transform: uppercase;
+        font-size: clamp(11px, 1vw, 13px);
+        color: var(--lightTextColor);
+        text-decoration: none;
+        transition: color 500ms ease;
+        cursor: pointer;
+        &:hover {
+            color: var(--appMainColor);
+        }
+    }
+} 
+
+.navbar_links_container.dropdown {
+    background-color: var(--navbarBgColor);
+    position: absolute;
+    top: 70px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 30px;
+    border-radius: 0 0 0 10px;
+    
+    > .formLink {
+        color: var(--appMainColor);
+    }
+}
+
+.navbar_info_container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    
+    .navbar_info_tel {
+        color: var(--lightTextColor);
+        
+        p {
+            font-size: clamp(13px, 1vw, 16px);
+            line-height: 20px;
+            cursor: default;
+        }
+        
+        a {
+            line-height: 20px;
+            text-decoration: none;
+            cursor: pointer;
+            color: var(--appMainColor);
+            font-weight: 600;
+            font-size: clamp(13px, 1vw, 16px);
+        }
+    }
+}
+
+@media (max-width: 940px) {
+    .navbar_logo_container {
+        width: 45px;
+        height: 45px;
+        text-align: start;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar_logo_container {
+        width: 35px;
+        height: 35px;
+        text-align: start;
+    }
+}

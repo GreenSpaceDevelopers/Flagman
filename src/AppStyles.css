@@ -1,0 +1,29 @@
+:root {
+    --lightTextColor: #e1e1e1; 
+    --navbarBgColor: #333;
+    --appMainColor: #14ACE9;
+}
+
+.app_mainButton {
+    padding: 8px 10px;
+    border: 2px solid var(--appMainColor);
+    border-radius: 10px;
+    text-transform: uppercase;
+    background-color: var(--appMainColor);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 500ms ease;
+    font-size: clamp(12px, 1vw, 20px);
+}
+
+@media (hover: none) {
+    .app_mainButton {
+        color: initial;
+    }
+}
+
+@media (max-width: 480px) {
+    .app_mainButton {
+        padding: 5px 7px;
+    }
+}
