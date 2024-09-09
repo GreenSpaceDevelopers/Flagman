@@ -89,3 +89,32 @@
         }
     }
 }
+
+@media (max-width: 940px) {
+    .footer_info_container {
+        gap: 20px;
+        flex-direction: column;
+        .footer_tels_container {
+            width: 100%;
+        }
+        .footer_address_container {
+            width: 100%;
+            justify-content: flex-start;
+            p {
+                width: 90%;
+            }
+        }
+        .footer_contacts_container {
+            width: 100%;
+            justify-content: flex-start;
+        }
+        .footer_developers_container {
+            width: 100%;
+            justify-content: flex-start;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    
+}

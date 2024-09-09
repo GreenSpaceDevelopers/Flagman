@@ -37,21 +37,30 @@ const Products: React.FC = () => {
                     ЭФФЕКТИВНОЕ РАЗМЕЩЕНИЕ СТЕЛЛАЖЕЙ В ТОРГОВОМ ЗАЛЕ МАГАЗИНА ОПРЕДЕЛЯЕТ ПРИБЫЛЬНОСТЬ РАБОТЫ КОМПАНИИ В ЦЕЛОМ, 
                     ЕЕ КОНКУРЕНТОСПОСОБНОСТЬ И ПЕРСПЕКТИВЫ РАЗВИТИЯ
                     </p>
+                    <div className='products_tabs'>
+                        <div><a href="#universalShelving">Универсальные стеллажи</a></div>
+                        <div><a href="#specializedRacks">Специализированные стеллажи</a></div>
+                        <div><a href="#integratedShelving">Интегрированные стеллажи</a></div>
+                        <div><a href="#accessoriesForShelving">Аксессуары к торговым стеллажам</a></div>
+                        <div><a href="#cashBoxes">Кассовые боксы</a></div>
+                        </div>
                 </div>
                 
-                <h2 className='Subtitle'>УНИВЕРСАЛЬНЫЕ СТЕЛЛАЖИ</h2>
-                <div className='catalogItems'>
-                    {UniversalShelvingConsts.warehouseRacks.map((wr, idx) => (
-                        <div className='catalogItem' key={idx}>
-                            <img src={wr.imgUrl} alt={wr.title} />
-                            <h5>{wr.title}</h5>
-                            <p>{wr.desc}</p>
-                        </div>
-                    ))}
+                <div id="universalShelving">
+                    <h2 className='Subtitle'>УНИВЕРСАЛЬНЫЕ СТЕЛЛАЖИ</h2>
+                    <div className='catalogItems'>
+                        {UniversalShelvingConsts.warehouseRacks.map((wr, idx) => (
+                            <div className='catalogItem' key={idx}>
+                                <img src={wr.imgUrl} alt={wr.title} />
+                                <h5>{wr.title}</h5>
+                                <p>{wr.desc}</p>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
             
-            <div className='catalog'>
+            <div className='catalog' id="specializedRacks">
                 <h2 className='Subtitle'>СПЕЦИАЛИЗИРОВАННЫЕ СТЕЛЛАЖИ</h2>
                 <div className='catalogItems'>
                     {SpecializedRackConsts.specializedRack.map((wr, idx) => (
@@ -64,7 +73,7 @@ const Products: React.FC = () => {
                 </div>
             </div>
             
-            <div className='catalog'>
+            <div className='catalog' id='integratedShelving'>
                 <h2 className='Subtitle'>ИНТЕГРИРОВАННЫЕ СТЕЛЛАЖИ</h2>
                 <div className='catalogItems'>
                     {IntegratedShelvingConsts.integratedShelving.map((wr, idx) => (
@@ -77,7 +86,7 @@ const Products: React.FC = () => {
                 </div>
             </div>
             
-            <div className='catalog'>
+            <div className='catalog' id='accessoriesForShelving'>
                 <h2 className='Subtitle'>АКСЕССУАРЫ К ТОРГОВЫМ СТЕЛЛАЖАМ</h2>
                 <div className='catalogItems'>
                     {AccessoriesForShelvingConsts.accessoriesForShelving.map((wr, idx) => (
@@ -90,7 +99,7 @@ const Products: React.FC = () => {
                 </div>
             </div>
             
-            <div className='catalog'>
+            <div className='catalog' id='cashBoxes'>
                 <h2 className='Subtitle'>КАССОВЫЕ БОКСЫ</h2>
                 <div className='catalogItems'>
                     {CashBoxesConsts.cashBoxes.map((wr, idx) => (

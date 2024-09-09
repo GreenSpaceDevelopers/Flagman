@@ -8,6 +8,7 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
 .myModal.active {
@@ -15,7 +16,10 @@
 }
 
 .myModalContent {
+    width: 1000px;
+    height: auto;
     background-color: white;
     padding: 20px;
     border-radius: 5px;
+    cursor: default;
 }

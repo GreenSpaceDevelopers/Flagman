@@ -37,6 +37,26 @@
         > p {
             color: #000;
             font-weight: 600;
+            font-size: clamp(10px, 1vw, 16px);
         }
+    }
+}
+
+@media (max-width: 940px) {
+    .catalogsBlock {
+        flex-wrap: wrap;
+        
+        > a {
+            width: 25%;
+            text-align: start;
+            font-size: 12px;
+            text-decoration: none;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .catalogItem {
+        width: 45%;
     }
 }

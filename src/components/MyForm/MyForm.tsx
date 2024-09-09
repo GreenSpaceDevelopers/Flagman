@@ -1,12 +1,14 @@
 import { useState } from 'react';
 import axios from 'axios';
 import './MyForm.css';
+import MyFormInfoAlert from '../MyFormInfoAlert/MyFormInfoAlert';
 
 const MyForm: React.FC = () => {
     const [phone, setPhone] = useState<string>('');
     const [name, setName] = useState<string>('');
     const [email, setEmail] = useState<string>('');
     const [desc, setDesc] = useState<string>('');
+    const [isInfoAlertVisible, setInfoAlertVisible] = useState<boolean>(false);
     
     const isPhoneNumberValid = (phone: string): boolean => {
         const phoneRegex = /^[+]*[0-9]{10,15}$/;
@@ -54,7 +56,10 @@ const MyForm: React.FC = () => {
                 }
             );
             
-            alert('Спасибо, мы свяжемся с вами в ближайшее время!')
+            setInfoAlertVisible(true);
+            setTimeout(() => {
+                setInfoAlertVisible(false);
+            }, 5000)
             
             setPhone('');
             setName('');
@@ -73,6 +78,12 @@ const MyForm: React.FC = () => {
             <p>Оставьте контакты, по которым мы можем с вами связаться, наши специалисты помогут с решением вашего вопроса</p>
             
             <form className="form" onSubmit={handleSubmit}>
+                {isInfoAlertVisible && (
+                    <MyFormInfoAlert>
+                        Спасибо, мы свяжемся с вами в ближайшее время!
+                    </MyFormInfoAlert>
+                )}
+                
                 <input
                     className="input name"
                     name='Имя'

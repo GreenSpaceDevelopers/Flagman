@@ -1,0 +1,11 @@
+@import '../../AppStyles.css';
+
+.MyFormInfoAlert {
+    width: 100%;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid var(--appMainColor);
+    background-color: transparent;
+    font-weight: 600;
+}   

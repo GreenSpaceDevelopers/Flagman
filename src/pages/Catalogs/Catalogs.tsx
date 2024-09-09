@@ -83,11 +83,6 @@ const Catalogs: React.FC = () => {
                             <FiletypePdf className='catalog_fileLogo' size={50} />
                             <p>Кассовые боксы</p>
                         </a>
-                        
-                        <a href={file7}>
-                            <FiletypePdf className='catalog_fileLogo' size={50} />
-                            <p>Мезонин на колоннах</p>
-                        </a>
                     </div>
                 </div>
                 
@@ -167,7 +162,7 @@ const Catalogs: React.FC = () => {
                 </div>
                 
                 <div className='catalogsList'>
-                    <h2>Брошюры</h2>
+                    <h2>Паспорта</h2>
                     <div className='catalogsBlock'>
                         <a href={file21} download>
                             <FiletypePdf className='catalog_fileLogo' size={50} />
@@ -202,7 +197,7 @@ const Catalogs: React.FC = () => {
                 </div>
                 
                 <div className='catalogsList'>
-                    <h2>Брошюры</h2>
+                    <h2>Руководства по эксплуатации</h2>
                     <div className='catalogsBlock'>
                         <a href={file27} download>
                             <FiletypePdf className='catalog_fileLogo' size={50} />
