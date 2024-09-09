@@ -17,3 +17,10 @@ yarn-debug.log*
 yarn-error.log*
 # files
 /src/assets/files
+/src/assets/images/accessories_for_shelving
+/src/assets/images/cash_boxes
+/src/assets/images/integrated_shelving
+/src/assets/images/PhotoGallery
+/src/assets/images/specialized_rack
+/src/assets/images/universal_shelving
+/src/assets/images/warehouse_rack
