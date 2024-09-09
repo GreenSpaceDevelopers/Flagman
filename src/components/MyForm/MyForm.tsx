@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import axios from 'axios';
-import './Form.css';
+import './MyForm.css';
 
-const Form: React.FC = () => {
+const MyForm: React.FC = () => {
     const [phone, setPhone] = useState<string>('');
     const [name, setName] = useState<string>('');
     const [email, setEmail] = useState<string>('');
@@ -118,4 +118,4 @@ const Form: React.FC = () => {
     );
 }
 
-export default Form;
+export default MyForm;

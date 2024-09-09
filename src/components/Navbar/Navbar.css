@@ -60,6 +60,13 @@
     > .formLink {
         color: var(--appMainColor);
     }
+    
+    .navbar_dropdownButton {
+        border: none;
+        background: transparent;
+        color: var(--appMainColor);
+        font-size: clamp(13px, 1vw, 13px);
+    }
 }
 
 .navbar_info_container {

@@ -12,18 +12,14 @@ const Footer: React.FC = () => {
                     <div className='footer_tels'>
                         <p><b>Телефон:<br /></b></p>
                         <a>+7 (000) 000-00-00</a>
-                        <a>+7 (000) 000-00-00</a>
-                        <a>+7 (000) 000-00-00</a>
                     </div>
                 </div>
                 
                 <div className='footer_address_container'>
                     <GeoAltFill size={40} color='#14ACE9' />
                     <p>
-                        <b>Адрес:<br /></b> 198095, г. Санкт-Петербург, 
-                        пер. Химический, д. 1, литер АВ, офис 315. 
-                        Операционный офис: 182113, 
-                        Псковская обл., г. Великие Луки, пер. Пушкина, д. 4.
+                        <b>Адрес:<br /></b> 182101, Псковская область, г. Великие Луки, 
+                        проспект Гагарина, 116Б
                     </p>
                 </div>
                 
@@ -31,7 +27,7 @@ const Footer: React.FC = () => {
                     <EnvelopeAtFill size={40} color='#14ACE9' />
                     <div>
                         <p><b>Контакты:</b></p>
-                        <p>email@mail.ru</p>
+                        <p>met.lajn@yandex.ru</p>
                         <div className='footer_contacts_icons'>
                             <a>
                                 <Telegram size={25} color='#24a1de' />
