@@ -3,7 +3,7 @@ import './App.css';
 import AppRouter from './components/AppRouter';
 import Footer from './components/Footer/Footer';
 import Navbar from './components/Navbar/Navbar';
-import { ArrowUpCircleFill, ArrowUpLeftCircleFill, ArrowUpSquareFill } from 'react-bootstrap-icons';
+import { ArrowUpSquareFill } from 'react-bootstrap-icons';
 
 const App: React.FC = function() {
     const [navbarHeight, setNavbarHeight] = useState<number>(0);
