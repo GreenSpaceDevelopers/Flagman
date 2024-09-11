@@ -111,10 +111,6 @@ const Products: React.FC = () => {
                     ))}
                 </div>
             </div>
-            
-            <div>
-                <From />
-            </div>
         </div>
     );
 }

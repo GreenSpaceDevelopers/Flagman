@@ -8,6 +8,7 @@ import { ArrowUpSquareFill } from 'react-bootstrap-icons';
 const App: React.FC = function() {
     const [navbarHeight, setNavbarHeight] = useState<number>(0);
     const navbarRef = useRef<HTMLElement | null>(null);
+    const screenWidth = window.screen.width;
     
     useEffect(() => {
         if (navbarRef.current) {
@@ -25,7 +26,9 @@ const App: React.FC = function() {
             <div className="App" style={{ marginTop: `${navbarHeight}px` }}>
                 <AppRouter />
                 
-                <ArrowUpSquareFill className="scrollToTopButton" onClick={scrollToTop} size={50} />
+                {screenWidth > 940 && (
+                    <ArrowUpSquareFill className="scrollToTopButton" onClick={scrollToTop} size={50} />
+                )}
             </div>
             <Footer />
         </>
