@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Flagman/static/css/main.1d53328a.css",
-    "main.js": "/Flagman/static/js/main.41facf30.js",
+    "main.js": "/Flagman/static/js/main.79956127.js",
     "static/media/bg2.png": "/Flagman/static/media/bg2.bc771656fcffbe8816f1.png",
     "static/media/bg1.png": "/Flagman/static/media/bg1.052bdb020097dfe82b5a.png",
     "static/media/FlagmanText.png": "/Flagman/static/media/FlagmanText.7f478b862b256f498ad1.png",
@@ -118,10 +118,10 @@
     "static/media/img76.webp": "/Flagman/static/media/img76.cdcedaa461bf3cd4a8ac.webp",
     "index.html": "/Flagman/index.html",
     "main.1d53328a.css.map": "/Flagman/static/css/main.1d53328a.css.map",
-    "main.41facf30.js.map": "/Flagman/static/js/main.41facf30.js.map"
+    "main.79956127.js.map": "/Flagman/static/js/main.79956127.js.map"
   },
   "entrypoints": [
     "static/css/main.1d53328a.css",
-    "static/js/main.41facf30.js"
+    "static/js/main.79956127.js"
   ]
 }
