@@ -1,4 +1,3 @@
-import From from '../../components/MyForm/MyForm';
 import AccessoriesForShelvingConsts from '../../helpers/constants/AccessoriesForShelvingConsts';
 import CashBoxesConsts from '../../helpers/constants/CashBoxesConsts';
 import IntegratedShelvingConsts from '../../helpers/constants/IntegratedShelvingConsts';

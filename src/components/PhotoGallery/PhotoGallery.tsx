@@ -12,9 +12,23 @@ const PhotoGallery: React.FC = () => {
                 ))}
             </div>
             
-            <p>Складское оборудование</p>
+            <p>Торговое оборудование</p>
             <div className='photoGallery_images_container'>
                 {PhotoGalleryConsts.PhotoGalleryTradeImages.map((imgUrl, idx) => (
+                    <img className='photoGallery_image' src={imgUrl} alt='' key={idx} />
+                ))}
+            </div>
+            
+            <p>Металлоконструкции</p>
+            <div className='photoGallery_images_container'>
+                {PhotoGalleryConsts.MetalStructures.map((imgUrl, idx) => (
+                    <img className='photoGallery_image' src={imgUrl} alt='' key={idx} />
+                ))} 
+            </div>
+            
+            <p>Быстровозводимые дома</p>
+            <div className='photoGallery_images_container'>
+                {PhotoGalleryConsts.PrefabricatedHouses.map((imgUrl, idx) => (
                     <img className='photoGallery_image' src={imgUrl} alt='' key={idx} />
                 ))}
             </div>

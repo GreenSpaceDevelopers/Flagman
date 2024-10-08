@@ -32,16 +32,18 @@ const Navbar = forwardRef<HTMLElement, any>((props, ref) => {
                     <img className='navbar_logo2' src={navText} alt='Flagman' />
                 </div>
                 
-                {screenWidth > 940 && (
+                {screenWidth > 1200 && (
                     <div className='navbar_links_container'>
                         <div className='navbar_link' onClick={() => navigate('/')}>главная</div>
                         <div className='navbar_link' onClick={() => navigate('/products')}>продукция</div>
                         <div className='navbar_link' onClick={() => navigate('/catalogs')}>каталоги</div>
+                        <div className='navbar_link' onClick={() => navigate('/metalStructures')}>металлоконструкции</div>
+                        <div className='navbar_link' onClick={() => navigate('/houses')}>быстровозводимые дома</div>
                         <a className='navbar_link' href='https://ozm.ru/3d_tour/' target='_blank' rel="noopener noreferrer">3d тур</a>
                     </div> 
                 )}
                 
-                {screenWidth > 940 && (
+                {screenWidth > 1200 && (
                     <div className='navbar_info_container'>
                         <div className='navbar_info_tel'>
                             <p>Отдел продаж</p>
@@ -52,7 +54,7 @@ const Navbar = forwardRef<HTMLElement, any>((props, ref) => {
                     </div>
                 )}
                 
-                {screenWidth <= 940 && (
+                {screenWidth <= 1200 && (
                     <div>
                         <div>
                             <List onClick={handleDropdownClick} size={30} color='#fff' />
@@ -62,6 +64,8 @@ const Navbar = forwardRef<HTMLElement, any>((props, ref) => {
                                 <div className='navbar_link' onClick={() => navigate('/')}>главная</div>
                                 <div className='navbar_link' onClick={() => navigate('/products')}>продукция</div>
                                 <div className='navbar_link' onClick={() => navigate('/catalogs')}>каталоги</div>
+                                <div className='navbar_link' onClick={() => navigate('/metalStructures')}>металлоконструкции</div>
+                            <div className='navbar_link' onClick={() => navigate('/houses')}>быстровозводимые дома</div>
                                 <a className='navbar_link' href='https://ozm.ru/3d_tour/' target='_blank' rel="noopener noreferrer">3d тур</a>
                                 <button className='navbar_dropdownButton' onClick={handleShowModalForm}>оставить заявку</button>
                             </div> 

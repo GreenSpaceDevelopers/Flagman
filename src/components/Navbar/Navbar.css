@@ -3,7 +3,7 @@
 .Navbar {
     width: 100%;
     background-color: var(--navbarBgColor);
-    padding: 20px 10% 15px 10%;
+    padding: 20px 5% 15px 5%;
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -12,7 +12,7 @@
 }
 
 .navbar_logo_container {
-    width: 120px;
+    width: 15%;
     height: 60px;
     text-align: start;
     display: flex;
@@ -28,6 +28,10 @@
     }
 }
 
+.app_mainButton.navbar {
+    font-size: clamp(9px, 1vw, 18px);
+}
+
 .navbar_links_container {
     display: flex;
     align-items: center;
@@ -35,7 +39,7 @@
     
     .navbar_link {
         text-transform: uppercase;
-        font-size: clamp(11px, 1vw, 13px);
+        font-size: clamp(7px, 1vw, 13px);
         color: var(--lightTextColor);
         text-decoration: none;
         transition: color 500ms ease;
@@ -78,7 +82,7 @@
         color: var(--lightTextColor);
         
         p {
-            font-size: clamp(13px, 1vw, 16px);
+            font-size: clamp(11px, 1vw, 16px);
             line-height: 20px;
             cursor: default;
         }
@@ -89,7 +93,7 @@
             cursor: pointer;
             color: var(--appMainColor);
             font-weight: 600;
-            font-size: clamp(13px, 1vw, 16px);
+            font-size: clamp(11px, 1vw, 16px);
         }
     }
 }
@@ -99,6 +103,13 @@
         width: 45px;
         height: 45px;
         text-align: start;
+    }
+}
+
+@media (max-width: 1400px) {
+    .navbar_info_container {
+        flex-direction: column;
+        gap: 5px;
     }
 }
 
