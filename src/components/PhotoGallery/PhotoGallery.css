@@ -12,7 +12,8 @@
     }
     
     > p {
-        font-size: clamp(13px, 2vw, 20px);
+        font-size: clamp(13px, 2vw, 25px);
+        font-weight: 600;
     }
 }
 
