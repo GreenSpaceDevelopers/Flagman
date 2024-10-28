@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
                 </div>
             </div>
             
-            <p>&copy; 2024 OOO "Flagman". Все права защищены.</p>   
+            <p>&copy; 2024 OOO "Флагман". Все права защищены.</p>   
         </footer>
     );
 }

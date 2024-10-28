@@ -16,6 +16,7 @@
     flex-direction: column;
     >h2 {
         margin: 30px 0 30px 0;
+        color: var(--appMainColor);
     }
 }
 

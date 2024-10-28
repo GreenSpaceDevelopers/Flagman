@@ -8,6 +8,7 @@
     
     > h1 {
         font-size: clamp(20px, 5vw, 50px);
+        color: var(--appMainColor);
         text-align: center;
     }
     
