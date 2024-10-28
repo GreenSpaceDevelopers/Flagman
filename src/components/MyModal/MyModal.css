@@ -33,6 +33,7 @@
     cursor: pointer;
     overflow: hidden;
     transition: opacity 0.3s ease;
+    z-index: 1000;
 }
 
 .myModal.active {
@@ -47,6 +48,7 @@
     border-radius: 8px;
     padding: 20px;
     animation: slideUpToCenter 0.3s ease forwards;
+    z-index: 1000;
 }
 
 .myModal.closing .myModalContent {

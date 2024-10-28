@@ -3,13 +3,16 @@ import MyForm from '../../components/MyForm/MyForm';
 import PhotoGallery from '../../components/PhotoGallery/PhotoGallery';
 import './Main.css';
 import MyModal from '../../components/MyModal/MyModal';
+import useIntersectionObserver from '../../Hooks/useIntersectionObserver';
 
 const Main: React.FC = () => {
     const [isModalFormVisible, setModalFormVisible] = useState<boolean>(false);
+    useIntersectionObserver('.main_companyInfo_container', 'main_companyInfo_container_animation', 0.5);
     
     const handleShowModalForm = () => {
         setModalFormVisible(!isModalFormVisible);
     }
+    
     return (
         <>
             <div className="Main">
