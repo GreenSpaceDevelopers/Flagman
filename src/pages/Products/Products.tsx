@@ -1,3 +1,4 @@
+import ProductCard from '../../components/ProductCard/ProductCard';
 import AccessoriesForShelvingConsts from '../../helpers/constants/AccessoriesForShelvingConsts';
 import CashBoxesConsts from '../../helpers/constants/CashBoxesConsts';
 import IntegratedShelvingConsts from '../../helpers/constants/IntegratedShelvingConsts';
@@ -20,11 +21,7 @@ const Products: React.FC = () => {
                 
                 <div className='catalogItems'>
                     {WarehouseRackConsts.warehouseRacks.map((wr, idx) => (
-                        <div className='catalogItem' key={idx}>
-                            <img src={wr.imgUrl} alt={wr.title} />
-                            <h5>{wr.title}</h5>
-                            <p>{wr.desc}</p>
-                        </div>
+                        <ProductCard imgUrl={wr.imgUrl} title={wr.title} desc={wr.desc} key={idx} />
                     ))}
                 </div>
             </div>
@@ -49,11 +46,7 @@ const Products: React.FC = () => {
                     <h2 className='Subtitle'>УНИВЕРСАЛЬНЫЕ СТЕЛЛАЖИ</h2>
                     <div className='catalogItems'>
                         {UniversalShelvingConsts.warehouseRacks.map((wr, idx) => (
-                            <div className='catalogItem' key={idx}>
-                                <img src={wr.imgUrl} alt={wr.title} />
-                                <h5>{wr.title}</h5>
-                                <p>{wr.desc}</p>
-                            </div>
+                            <ProductCard imgUrl={wr.imgUrl} title={wr.title} desc={wr.desc} key={idx} />
                         ))}
                     </div>
                 </div>
@@ -63,11 +56,7 @@ const Products: React.FC = () => {
                 <h2 className='Subtitle'>СПЕЦИАЛИЗИРОВАННЫЕ СТЕЛЛАЖИ</h2>
                 <div className='catalogItems'>
                     {SpecializedRackConsts.specializedRack.map((wr, idx) => (
-                        <div className='catalogItem' key={idx}>
-                            <img src={wr.imgUrl} alt={wr.title} />
-                            <h5>{wr.title}</h5>
-                            <p>{wr.desc}</p>
-                        </div>
+                        <ProductCard imgUrl={wr.imgUrl} title={wr.title} desc={wr.desc} key={idx} />
                     ))}
                 </div>
             </div>
@@ -76,11 +65,7 @@ const Products: React.FC = () => {
                 <h2 className='Subtitle'>ИНТЕГРИРОВАННЫЕ СТЕЛЛАЖИ</h2>
                 <div className='catalogItems'>
                     {IntegratedShelvingConsts.integratedShelving.map((wr, idx) => (
-                        <div className='catalogItem' key={idx}>
-                            <img src={wr.imgUrl} alt={wr.title} />
-                            <h5>{wr.title}</h5>
-                            <p>{wr.desc}</p>
-                        </div>
+                        <ProductCard imgUrl={wr.imgUrl} title={wr.title} desc={wr.desc} key={idx} />
                     ))}
                 </div>
             </div>
@@ -89,11 +74,7 @@ const Products: React.FC = () => {
                 <h2 className='Subtitle'>АКСЕССУАРЫ К ТОРГОВЫМ СТЕЛЛАЖАМ</h2>
                 <div className='catalogItems'>
                     {AccessoriesForShelvingConsts.accessoriesForShelving.map((wr, idx) => (
-                        <div className='catalogItem' key={idx}>
-                            <img src={wr.imgUrl} alt={wr.title} />
-                            <h5>{wr.title}</h5>
-                            <p>{wr.desc}</p>
-                        </div>
+                        <ProductCard imgUrl={wr.imgUrl} title={wr.title} desc={wr.desc} key={idx} />
                     ))}
                 </div>
             </div>
@@ -102,11 +83,7 @@ const Products: React.FC = () => {
                 <h2 className='Subtitle'>КАССОВЫЕ БОКСЫ</h2>
                 <div className='catalogItems'>
                     {CashBoxesConsts.cashBoxes.map((wr, idx) => (
-                        <div className='catalogItem' key={idx}>
-                            <img src={wr.imgUrl} alt={wr.title} />
-                            <h5>{wr.title}</h5>
-                            <p>{wr.desc}</p>
-                        </div>
+                        <ProductCard imgUrl={wr.imgUrl} title={wr.title} desc={wr.desc} key={idx} />
                     ))}
                 </div>
             </div>

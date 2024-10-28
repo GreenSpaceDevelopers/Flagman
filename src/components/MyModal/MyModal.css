@@ -1,3 +1,25 @@
+@keyframes slideUpToCenter {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDownToBottom {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+
 .myModal {
     display: none;
     position: fixed;
@@ -9,6 +31,8 @@
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
     cursor: pointer;
+    overflow: hidden;
+    transition: opacity 0.3s ease;
 }
 
 .myModal.active {
@@ -18,8 +42,13 @@
 .myModalContent {
     width: 1000px;
     height: auto;
-    background-color: var(--appMainColor);
-    padding: 20px;
-    border-radius: 5px;
     cursor: default;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    animation: slideUpToCenter 0.3s ease forwards;
+}
+
+.myModal.closing .myModalContent {
+    animation: slideDownToBottom 0.3s ease forwards;
 }
