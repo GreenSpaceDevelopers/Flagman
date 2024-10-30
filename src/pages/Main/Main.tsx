@@ -1,33 +1,17 @@
-import { useState } from 'react';
 import MyForm from '../../components/MyForm/MyForm';
 import PhotoGallery from '../../components/PhotoGallery/PhotoGallery';
 import './Main.css';
-import MyModal from '../../components/MyModal/MyModal';
 import useIntersectionObserver from '../../Hooks/useIntersectionObserver';
+import SimpleSlider from '../../components/SimpleSlider/SimpleSlider';
 
 const Main: React.FC = () => {
-    const [isModalFormVisible, setModalFormVisible] = useState<boolean>(false);
     useIntersectionObserver('.main_companyInfo_container', 'main_companyInfo_container_animation', 0.5);
-    
-    const handleShowModalForm = () => {
-        setModalFormVisible(!isModalFormVisible);
-    }
     
     return (
         <>
             <div className="Main">
                 <header>
-                    <h2>
-                        СТЕЛЛАЖНОЕ ОБОРУДОВАНИЕ <br />
-                        ДЛЯ ВАШЕГО БИЗНЕСА
-                    </h2>
-                    
-                    <p>
-                        ПРОЕКТИРУЕМ И ПОСТАВЛЯЕМ СТЕЛЛАЖИ ДЛЯ СЕКТОРОВ СОВРЕМЕННОЙ ТОРГОВЛИ, <br />
-                        РАСПРЕДЕЛИТЕЛЬНЫХ ЦЕНТРОВ И РАЗЛИЧНЫХ ВИДОВ СКЛАДОВ
-                    </p>
-                    
-                    <button className='app_mainButton header' onClick={handleShowModalForm}>оставить заявку</button>
+                    <SimpleSlider />
                 </header>
                 
                 <main>
@@ -55,10 +39,6 @@ const Main: React.FC = () => {
                     </div>
                 </main>
             </div>
-            
-            <MyModal visible={isModalFormVisible} setVisible={setModalFormVisible} onCloseModal={handleShowModalForm}>
-                <MyForm />
-            </MyModal>
         </>
     );
 }
