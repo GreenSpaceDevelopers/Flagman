@@ -5,6 +5,13 @@
     overflow: hidden;
 }
 
+.SimpleSlider_loaderContainer {
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+    align-content: center;
+}
+
 .SimpleSlider {
     width: 100%;
     height: 90vh;
@@ -85,6 +92,7 @@
 
 .SimpleSlider_wrapperContent {
     position: absolute;
+    width: 90%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

@@ -34,7 +34,7 @@ const PrefabricatedHouses: React.FC = () => {
                     энергии по сравнению с
                     традиционными домами.
                 </p>
-                <img src={PhotoGallery19} alt='Быстровозводимый дом' />
+                <img className='two' src={PhotoGallery19} alt='Быстровозводимый дом' />
             </div>
             
             <div className='prefabricatedHouses_block'>

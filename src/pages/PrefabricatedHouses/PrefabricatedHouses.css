@@ -22,11 +22,16 @@
         gap: 10%;
         width: 100%;
         > img {
+            border-radius: 10px;
             width: 45%;
             height: 300px;
             object-fit: cover;
             aspect-ratio: 4 / 3;
             object-position: left center;
+            object-fit: cover;
+        }
+        > .two {
+            object-position: left bottom;
         }
         > p {
             font-size: clamp(15px, 2vw, 25px);
