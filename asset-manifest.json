@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/Flagman/static/css/main.51f37745.css",
-    "main.js": "/Flagman/static/js/main.1b9377cc.js",
+    "main.css": "/Flagman/static/css/main.a483dbc5.css",
+    "main.js": "/Flagman/static/js/main.929749e5.js",
+    "static/media/header2.jpg": "/Flagman/static/media/header2.af4cf6e2da0eb40f4aca.jpg",
+    "static/media/header1.jpg": "/Flagman/static/media/header1.b4ee8d8980cff6c14e73.jpg",
     "static/media/PhotoGallery17.jpg": "/Flagman/static/media/PhotoGallery17.8510e6e3f6fa86538646.jpg",
     "static/media/PhotoGallery13.png": "/Flagman/static/media/PhotoGallery13.4d4ac46cae6e38ae77ea.png",
-    "static/media/bg2.png": "/Flagman/static/media/bg2.bc771656fcffbe8816f1.png",
     "static/media/bg1.png": "/Flagman/static/media/bg1.052bdb020097dfe82b5a.png",
     "static/media/PhotoGallery20.jpeg": "/Flagman/static/media/PhotoGallery20.8e980efdfe5ff010dcae.jpeg",
     "static/media/PhotoGallery19.jpg": "/Flagman/static/media/PhotoGallery19.2d9c71ebaf2441b1a3cf.jpg",
+    "static/media/header3.jpg": "/Flagman/static/media/header3.2d9c71ebaf2441b1a3cf.jpg",
     "static/media/PhotoGallery18.jpg": "/Flagman/static/media/PhotoGallery18.01dafb15e1f4fae8bcfa.jpg",
     "static/media/PhotoGallery14.jpg": "/Flagman/static/media/PhotoGallery14.decc1440d2ed5ac32703.jpg",
     "static/media/PhotoGallery15.jpeg": "/Flagman/static/media/PhotoGallery15.f644b69fc512d26ef41a.jpeg",
@@ -74,10 +76,12 @@
     "static/media/img49.webp": "/Flagman/static/media/img49.177362fe0588ac58d99c.webp",
     "static/media/img87.webp": "/Flagman/static/media/img87.d6c13c1eaea6dd321e4d.webp",
     "static/media/img26.webp": "/Flagman/static/media/img26.8d11af76d265756bc546.webp",
+    "static/media/slick.svg": "/Flagman/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/img51.webp": "/Flagman/static/media/img51.06ea84c6bec6771c971f.webp",
     "static/media/img61.webp": "/Flagman/static/media/img61.d4d1fba84be39b9bc1b8.webp",
     "static/media/img29.webp": "/Flagman/static/media/img29.3360d2cf11598ee36003.webp",
     "static/media/img19.webp": "/Flagman/static/media/img19.3cf0d6cf5e87f4b54849.webp",
+    "static/media/slick.eot": "/Flagman/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/img62.webp": "/Flagman/static/media/img62.29f4d0b01a0395615546.webp",
     "static/media/img57.webp": "/Flagman/static/media/img57.0a4a60a60e1151204364.webp",
     "static/media/img28.webp": "/Flagman/static/media/img28.d9be202ffa5b87338de6.webp",
@@ -90,6 +94,7 @@
     "static/media/img81.webp": "/Flagman/static/media/img81.969aeb6dcc50f37683a8.webp",
     "static/media/img21.webp": "/Flagman/static/media/img21.0ae2723f935a1ca71c9c.webp",
     "static/media/img77.webp": "/Flagman/static/media/img77.b30433675d27011973a9.webp",
+    "static/media/slick.ttf": "/Flagman/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/img55.webp": "/Flagman/static/media/img55.3f97f9df74d2f83a31bb.webp",
     "static/media/img32.webp": "/Flagman/static/media/img32.50d19932666278087b2a.webp",
     "static/media/img39.webp": "/Flagman/static/media/img39.0618cebec528dbd4ce44.webp",
@@ -120,16 +125,17 @@
     "static/media/img33.webp": "/Flagman/static/media/img33.e4674356ff7f796bbf19.webp",
     "static/media/img38.webp": "/Flagman/static/media/img38.fe14362790af5104462c.webp",
     "static/media/img83.webp": "/Flagman/static/media/img83.2a12e841e94c4c952bbc.webp",
+    "static/media/slick.woff": "/Flagman/static/media/slick.295183786cd8a1389865.woff",
     "static/media/img88.webp": "/Flagman/static/media/img88.798f65bcb9797b36be35.webp",
     "static/media/img85.webp": "/Flagman/static/media/img85.c2a663b4e24b0316b7e8.webp",
     "static/media/img84.webp": "/Flagman/static/media/img84.bd210a1bf8a78129ff37.webp",
     "static/media/img76.webp": "/Flagman/static/media/img76.cdcedaa461bf3cd4a8ac.webp",
     "index.html": "/Flagman/index.html",
-    "main.51f37745.css.map": "/Flagman/static/css/main.51f37745.css.map",
-    "main.1b9377cc.js.map": "/Flagman/static/js/main.1b9377cc.js.map"
+    "main.a483dbc5.css.map": "/Flagman/static/css/main.a483dbc5.css.map",
+    "main.929749e5.js.map": "/Flagman/static/js/main.929749e5.js.map"
   },
   "entrypoints": [
-    "static/css/main.51f37745.css",
-    "static/js/main.1b9377cc.js"
+    "static/css/main.a483dbc5.css",
+    "static/js/main.929749e5.js"
   ]
 }
