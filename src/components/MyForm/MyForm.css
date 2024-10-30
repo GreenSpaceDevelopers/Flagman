@@ -69,3 +69,16 @@
         }
     }
 }
+
+@media (max-width: 450px) {
+    .form_container {
+        form {
+            width: 85%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 50px;
+            justify-content: center;
+        }
+    }
+}

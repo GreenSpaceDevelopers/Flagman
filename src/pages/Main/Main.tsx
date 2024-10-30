@@ -56,7 +56,7 @@ const Main: React.FC = () => {
                 </main>
             </div>
             
-            <MyModal visible={isModalFormVisible} setVisible={setModalFormVisible}>
+            <MyModal visible={isModalFormVisible} setVisible={setModalFormVisible} onCloseModal={handleShowModalForm}>
                 <MyForm />
             </MyModal>
         </>

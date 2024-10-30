@@ -46,33 +46,40 @@
         text-decoration: none;
         transition: color 500ms ease;
         cursor: pointer;
-        &:hover {
-            color: var(--appMainColor);
-        }
     }
 } 
 
 .navbar_links_container.dropdown {
     background-color: var(--navbarBgColor);
+    height: 100vh;
+    width: 50%;
     position: absolute;
     top: 70px;
-    right: 0;
+    right: -100%; 
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 30px 30px;
+    gap: 30px;
+    padding: 30px;
     border-radius: 0 0 0 10px;
+    text-align: center;
+    transition: right 0.5s ease; 
+    overflow: hidden;
+    
     
     > .formLink {
         color: var(--appMainColor);
+        font-size: 120px;
     }
     
     .navbar_dropdownButton {
         border: none;
         background: transparent;
-        color: var(--appMainColor);
+        color: var(--appButtonColor);
         font-size: clamp(13px, 1vw, 13px);
     }
+}
+.navbar_links_container.dropdown.active {
+    right: 0;
 }
 
 .navbar_info_container {
@@ -100,25 +107,59 @@
     }
 }
 
-@media (max-width: 940px) {
-    .navbar_logo_container {
-        width: 45px;
-        height: 45px;
-        text-align: start;
+@media (max-width: 768px) {
+    .navbar_links_container {
+        .navbar_link {
+            font-size: 13px;
+        }
     }
 }
 
-@media (max-width: 1400px) {
-    .navbar_info_container {
-        flex-direction: column;
-        gap: 5px;
+@media (max-width: 1024px) {
+    .navbar_links_container.dropdown {
+        height: 100vh;
+        width: 30%;
+    }
+    .navbar_links_container.dropdown {
+        gap: 40px;
+    }
+    .navbar_link {
+        font-size: 12px !important;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 450px) {
     .navbar_logo_container {
         width: 35px;
         height: 35px;
         text-align: start;
+    }
+    .navbar_links_container {
+        .navbar_link {
+            font-size: 10px;
+        }
+    }
+    .navbar_links_container.dropdown {
+        height: 100vh;
+        width: 50%;
+    }
+    .navbar_links_container.dropdown {
+        gap: 40px;
+    }
+    .navbar_link {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 375px) {
+    .navbar_links_container.dropdown {
+        height: 100vh;
+        width: 100%;
+    }
+    .navbar_links_container.dropdown {
+        gap: 40px;
+    }
+    .navbar_link {
+        font-size: 14px;
     }
 }

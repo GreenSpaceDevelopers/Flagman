@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import Main from "../pages/Main/Main";
 import Products from "../pages/Products/Products";
 import Catalogs from "../pages/Catalogs/Catalogs";
-import MetalStructures from "../pages/MetalStructures/MetalStructures";
+import MetalStructures from "../pages/PrefabricatedHouses/MetalStructures";
 import PrefabricatedHouses from "../pages/PrefabricatedHouses/PrefabricatedHouses";
 
 const AppRouter: React.FC = () => {
