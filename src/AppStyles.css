@@ -2,14 +2,15 @@
     --lightTextColor: #e1e1e1; 
     --navbarBgColor: #333;
     --appMainColor: #004456;
+    --appButtonColor: #14ACE9;
 }
 
 .app_mainButton {
     padding: 8px 10px;
-    border: 2px solid var(--appMainColor);
+    border: 2px solid var(--appButtonColor);
     border-radius: 10px;
     text-transform: uppercase;
-    background-color: var(--appMainColor);
+    background-color: var(--appButtonColor);
     font-weight: 600;
     cursor: pointer;
     transition: all 500ms ease;

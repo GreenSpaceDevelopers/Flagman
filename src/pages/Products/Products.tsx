@@ -6,8 +6,11 @@ import SpecializedRackConsts from '../../helpers/constants/SpecializedRackConsts
 import UniversalShelvingConsts from '../../helpers/constants/UniversalShelvingConsts';
 import WarehouseRackConsts from '../../helpers/constants/WarehouseRack';
 import './Products.css';
+import useIntersectionObserver from '../../Hooks/useIntersectionObserver';
 
 const Products: React.FC = () => {
+    useIntersectionObserver('.productCard', 'productCard_animation', 0.5);
+    
     return (
         <div className="Products">
             <div className='catalog'>
@@ -46,7 +49,7 @@ const Products: React.FC = () => {
                     <h2 className='Subtitle'>УНИВЕРСАЛЬНЫЕ СТЕЛЛАЖИ</h2>
                     <div className='catalogItems'>
                         {UniversalShelvingConsts.warehouseRacks.map((wr, idx) => (
-                            <ProductCard imgUrl={wr.imgUrl} title={wr.title} desc={wr.desc} key={idx} />
+                            <ProductCard imgUrl={wr.imgUrl} title={wr.title} desc={wr.desc}  key={idx} />
                         ))}
                     </div>
                 </div>

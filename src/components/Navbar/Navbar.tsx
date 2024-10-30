@@ -54,27 +54,26 @@ const Navbar = forwardRef<HTMLElement, any>((props, ref) => {
                     </div>
                 )}
                 
-                {screenWidth <= 1200 && (
+                {screenWidth <= 1024 && (
                     <div>
                         <div>
                             <List onClick={handleDropdownClick} size={30} color='#fff' />
                         </div>
-                        {isDropdownVisible && (
-                            <div className='navbar_links_container dropdown'>
-                                <div className='navbar_link' onClick={() => navigate('/')}>главная</div>
-                                <div className='navbar_link' onClick={() => navigate('/products')}>продукция</div>
-                                <div className='navbar_link' onClick={() => navigate('/catalogs')}>каталоги</div>
-                                <div className='navbar_link' onClick={() => navigate('/metalStructures')}>металлоконструкции</div>
-                            <div className='navbar_link' onClick={() => navigate('/houses')}>быстровозводимые дома</div>
-                                <a className='navbar_link' href='https://ozm.ru/3d_tour/' target='_blank' rel="noopener noreferrer">3d тур</a>
-                                <button className='navbar_dropdownButton' onClick={handleShowModalForm}>оставить заявку</button>
-                            </div> 
-                        )}
+                        
+                        <div className={`navbar_links_container dropdown ${isDropdownVisible ? 'active' : ''}`}>
+                            <div className='navbar_link' onClick={() => {navigate('/'); handleDropdownClick()}}>главная</div>
+                            <div className='navbar_link' onClick={() => {navigate('/products'); handleDropdownClick()}}>продукция</div>
+                            <div className='navbar_link' onClick={() => {navigate('/catalogs'); handleDropdownClick()}}>каталоги</div>
+                            <div className='navbar_link' onClick={() => {navigate('/metalStructures'); handleDropdownClick()}}>металлоконструкции</div>
+                            <div className='navbar_link' onClick={() => {navigate('/houses'); handleDropdownClick()}}>быстровозводимые дома</div>
+                            <a className='navbar_link' onClick={() => handleDropdownClick()} href='https://ozm.ru/3d_tour/' target='_blank' rel="noopener noreferrer">3d тур</a>
+                            <button className='navbar_dropdownButton' onClick={() => {handleShowModalForm(); handleDropdownClick()}}>оставить заявку</button>
+                        </div> 
                     </div>
                 )}
             </nav>
             
-            <MyModal visible={isModalFormVisible} setVisible={setModalFormVisible}>
+            <MyModal visible={isModalFormVisible} setVisible={setModalFormVisible} onCloseModal={handleShowModalForm}>
                 <MyForm />
             </MyModal>
         </>

@@ -101,3 +101,13 @@
         }
     }
 }
+
+@media (max-width: 450px) {
+    .catalog {
+        & .catalogDesc {
+            > p {
+                max-width: 80%;
+            }
+        }
+    }
+}

@@ -34,5 +34,36 @@
         object-fit: cover;
         aspect-ratio: 4 / 3;
         object-position: center;
+        
+        opacity: 0;
+        transform: translateY(100px); 
+        transition: opacity 800ms ease, transform 800ms ease; 
+    }
+}
+
+.PhotoGallery_mainTitle {
+    opacity: 0;
+    transform: translateY(100px); 
+    transition: opacity 800ms ease, transform 800ms ease; 
+}
+.PhotoGallery_mainTitle_animation {
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
+.PhotoGallery_mainSubTitle {
+    opacity: 0;
+    transform: translateY(100px); 
+    transition: opacity 800ms ease, transform 800ms ease; 
+}
+.PhotoGallery_mainSubTitle_animation {
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
+.photoGallery_images_container_animation {
+    .photoGallery_image {
+        opacity: 1; 
+        transform: translateY(0);  
     }
 }

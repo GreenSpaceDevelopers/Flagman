@@ -38,6 +38,9 @@ header {
 }
 
 .main_companyInfo_container {
+    opacity: 0;
+    transform: translateY(100px); 
+    transition: opacity 500ms ease, transform 500ms ease; 
     padding: 0px 15%;
     height: 400px;
     display: flex;
@@ -69,6 +72,11 @@ header {
 
 .main_photogallery_container {
     padding: 0 15%;
+}
+
+.main_companyInfo_container_animation {
+    opacity: 1; 
+    transform: translateY(0); 
 }
 
 @media (max-width: 480px) {

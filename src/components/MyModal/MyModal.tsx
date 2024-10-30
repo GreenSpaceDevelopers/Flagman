@@ -1,14 +1,16 @@
 import { FC, ReactNode, useRef, useState, useEffect } from 'react';
 import './MyModal.css';
+import { XLg } from 'react-bootstrap-icons';
 
 interface MyModalProps {
     children: ReactNode;
     visible: boolean;
     setVisible: (visible: boolean) => void;
     backgroundColor?: string;
+    onCloseModal?: () => void;
 }
 
-const MyModal: FC<MyModalProps> = ({ children, visible, setVisible, backgroundColor }) => {
+const MyModal: FC<MyModalProps> = ({ children, visible, setVisible, backgroundColor, onCloseModal }) => {
     const [isClosing, setIsClosing] = useState(false);
     const rootClasses = ['myModal'];
     const modalContentRef = useRef<HTMLDivElement>(null);
@@ -48,6 +50,7 @@ const MyModal: FC<MyModalProps> = ({ children, visible, setVisible, backgroundCo
                 onMouseDown={(e) => e.stopPropagation()}
                 style={{ backgroundColor: `${backgroundColor || 'transparent'}` }}
             >
+                <XLg className='myModalContent_closeModalIcon' size={20} onClick={onCloseModal} />
                 {children}
             </div>
         </div>
