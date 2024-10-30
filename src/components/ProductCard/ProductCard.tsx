@@ -19,7 +19,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ imgUrl, title, desc }) => {
                 <button onClick={() => setProductDescModalVisible(!productDescModalVisible)}>Подробнее</button>
             </div>
             
-            <MyModal visible={productDescModalVisible} setVisible={setProductDescModalVisible}>
+            <MyModal visible={productDescModalVisible} setVisible={setProductDescModalVisible} onCloseModal={() => setProductDescModalVisible(false)}>
                 <div className='productCard_modal_mainContainer'>
                     <div className='productCard_modal_imgContainer'>
                         <img src={imgUrl} alt={title} />
