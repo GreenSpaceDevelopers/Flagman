@@ -3,7 +3,7 @@ import './Navbar.css';
 import navLogo from '../../assets/images/FlagmanLogo1.svg';
 import navText from '../../assets/images/FlagmanText.png';
 
-import { List } from 'react-bootstrap-icons'; 
+import { List, XLg } from 'react-bootstrap-icons'; 
 import { forwardRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import MyModal from '../MyModal/MyModal';
@@ -61,6 +61,7 @@ const Navbar = forwardRef<HTMLElement, any>((props, ref) => {
                         </div>
                         
                         <div className={`navbar_links_container dropdown ${isDropdownVisible ? 'active' : ''}`}>
+                            <XLg onClick={handleDropdownClick} size={25} color='#fff' />
                             <div className='navbar_link' onClick={() => {navigate('/'); handleDropdownClick()}}>главная</div>
                             <div className='navbar_link' onClick={() => {navigate('/products'); handleDropdownClick()}}>продукция</div>
                             <div className='navbar_link' onClick={() => {navigate('/catalogs'); handleDropdownClick()}}>каталоги</div>
