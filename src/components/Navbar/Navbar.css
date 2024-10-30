@@ -51,7 +51,8 @@
 
 .navbar_links_container.dropdown {
     background-color: var(--navbarBgColor);
-    height: 100vh;
+    height: 90dvh;
+    height: 90vh;
     width: 50%;
     position: absolute;
     top: 70px;
