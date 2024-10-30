@@ -67,3 +67,21 @@
         transform: translateY(0);  
     }
 }
+
+@media (max-width: 480px) {
+    .PhotoGallery_mainTitle {
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+    .PhotoGallery_mainSubTitle {
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+    
+    .photoGallery_images_container {
+        .photoGallery_image {
+            opacity: 1; 
+            transform: translateY(0);  
+        }
+    }
+}

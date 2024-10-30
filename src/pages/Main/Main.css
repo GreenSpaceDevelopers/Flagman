@@ -32,6 +32,7 @@
         
         p {
             font-size: clamp(12px, 2vw, 20px);
+            text-align: left;
         }
     }
     
@@ -52,7 +53,8 @@
 }
 
 @media (max-width: 480px) {
-    .app_mainButton.header {
-        padding: 5px 7px;
+    .main_companyInfo_container {
+        opacity: 1; 
+        transform: translateY(0); 
     }
 }
