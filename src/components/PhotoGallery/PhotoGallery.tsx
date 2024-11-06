@@ -9,7 +9,6 @@ const PhotoGallery: React.FC = () => {
     
     return (
         <div className="PhotoGallery">
-            <h2 className='PhotoGallery_mainTitle'>ФОТОГАЛЕРЕЯ</h2>
             <p className='PhotoGallery_mainSubTitle'>Складское оборудование</p>
             <div className='photoGallery_images_container'>
                 {PhotoGalleryConsts.PhotoGalleryWarehouseImages.map((imgUrl, idx) => (

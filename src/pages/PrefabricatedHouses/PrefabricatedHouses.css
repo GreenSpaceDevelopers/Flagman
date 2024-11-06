@@ -52,7 +52,7 @@
 @media (max-width: 1000px) {
     .prefabricatedHouses_block {
         > p {
-            text-align: left !important;
+            text-align: center !important;
         }
     }
 }

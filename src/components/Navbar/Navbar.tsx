@@ -5,7 +5,7 @@ import navText from '../../assets/images/FlagmanText.png';
 
 import { List, XLg } from 'react-bootstrap-icons'; 
 import { forwardRef, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import MyModal from '../MyModal/MyModal';
 import MyForm from '../MyForm/MyForm';
 
@@ -15,6 +15,8 @@ const Navbar = forwardRef<HTMLElement, any>((props, ref) => {
     const [isModalFormVisible, setModalFormVisible] = useState<boolean>(false);
     
     const navigate = useNavigate();
+    const location = useLocation();
+    const isActiveLink = (path: string) => location.pathname === path;
     
     const handleDropdownClick = () => {
         setIsDropdownVisible(!isDropdownVisible);
@@ -34,12 +36,44 @@ const Navbar = forwardRef<HTMLElement, any>((props, ref) => {
                 
                 {screenWidth > 1200 && (
                     <div className='navbar_links_container'>
-                        <div className='navbar_link' onClick={() => navigate('/')}>главная</div>
-                        <div className='navbar_link' onClick={() => navigate('/products')}>продукция</div>
-                        <div className='navbar_link' onClick={() => navigate('/catalogs')}>каталоги</div>
-                        <div className='navbar_link' onClick={() => navigate('/metalStructures')}>металлоконструкции</div>
-                        <div className='navbar_link' onClick={() => navigate('/houses')}>быстровозводимые дома</div>
-                        <a className='navbar_link' href='https://ozm.ru/3d_tour/' target='_blank' rel="noopener noreferrer">3d тур</a>
+                        <div 
+                            className={`navbar_link ${isActiveLink('/') ? 'active' : ''}`} 
+                            onClick={() => navigate('/')}
+                        >
+                            главная
+                        </div>
+                        <div 
+                            className={`navbar_link ${isActiveLink('/products') ? 'active' : ''}`} 
+                            onClick={() => navigate('/products')}
+                        >
+                            продукция
+                        </div>
+                        <div 
+                            className={`navbar_link ${isActiveLink('/catalogs') ? 'active' : ''}`} 
+                            onClick={() => navigate('/catalogs')}
+                        >
+                            каталоги
+                        </div>
+                        <div 
+                            className={`navbar_link ${isActiveLink('/metalStructures') ? 'active' : ''}`} 
+                            onClick={() => navigate('/metalStructures')}
+                        >
+                            металлоконструкции
+                        </div>
+                        <div 
+                            className={`navbar_link ${isActiveLink('/houses') ? 'active' : ''}`} 
+                            onClick={() => navigate('/houses')}
+                        >
+                            быстровозводимые дома
+                        </div>
+                        <a 
+                            className={`navbar_link ${location.pathname === '/3d_tour' ? 'active' : ''}`} 
+                            href='https://ozm.ru/3d_tour/' 
+                            target='_blank' 
+                            rel="noopener noreferrer"
+                        >
+                            3d тур
+                        </a>
                     </div> 
                 )}
                 

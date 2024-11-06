@@ -20,6 +20,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
     
     .navbar_logo {
         height: 100%;
@@ -41,11 +42,14 @@
     
     .navbar_link {
         text-transform: uppercase;
-        font-size: clamp(7px, 1vw, 13px);
+        font-size: clamp(11px, 0.6vw, 20px);
         color: var(--lightTextColor);
         text-decoration: none;
-        transition: color 500ms ease;
         cursor: pointer;
+        font-weight: bolder;
+    }
+    .navbar_link.active {
+        color: var(--appButtonColor); 
     }
 } 
 

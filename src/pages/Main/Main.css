@@ -32,7 +32,7 @@
         
         p {
             font-size: clamp(12px, 2vw, 20px);
-            text-align: justify;
+            text-align: center;
         }
     }
     
@@ -54,7 +54,20 @@
 
 @media (max-width: 480px) {
     .main_companyInfo_container {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
         opacity: 1; 
-        transform: translateY(0); 
+        transform: translateY(0);
+        gap: 30px;
+        .main_companyInfo_text {
+            width: 100% !important;
+            > p {
+                text-align: justify !important;
+            }
+        }
+        .main_companyInfo_imgContainer {
+            width: 100%;
+        }
     }
 }

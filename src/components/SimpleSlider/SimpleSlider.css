@@ -70,17 +70,7 @@
     aspect-ratio: 4 / 3;
     object-fit: cover;
     filter: brightness(0.5);
-}
-.SimpleSlider_img.one,
-.SimpleSlider_img.two {
-    object-position: left center;
-}
-.SimpleSlider_img.three {
-    width: 100%;
-    height: 90dvh;
-    height: 90vh;
-    object-fit: cover;
-    object-position: left bottom;
+    object-position: center;
 }
 
 .SimpleSlider_img::before {

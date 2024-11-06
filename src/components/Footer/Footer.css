@@ -82,11 +82,7 @@
             cursor: pointer;
             font-weight: 600;
             text-decoration: underline;
-            transition: all 500ms ease;
             color: #000;
-            &:hover {
-                color: var(--appMainColor);
-            }
         }
     }
 }
