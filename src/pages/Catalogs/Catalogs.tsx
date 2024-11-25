@@ -1,7 +1,7 @@
 import { FileEarmarkZip, FiletypePdf } from 'react-bootstrap-icons';
 import './Catalogs.css';
 
-import file1 from '../../assets/files/catalogs/Elektronnyy_katalog_(K25_G50_R30_U).zip';
+import file1 from '../../assets/files/catalogs/Электронный каталог (K25, G50, R30, U).zip';
 import file2 from '../../assets/files/catalogs/Каталог торговых стеллажей В3.pdf';
 import file3 from '../../assets/files/catalogs/Каталог К25_2019.pdf';
 import file4 from '../../assets/files/catalogs/Каталог G50_2020.pdf';

@@ -81,9 +81,9 @@ const Navbar = forwardRef<HTMLElement, any>((props, ref) => {
                     <div className='navbar_info_container'>
                         <div className='navbar_info_tel'>
                             <p>Отдел продаж</p>
-                            <a>+7 (000) 000-00-00</a>
+                            <a href="tel:+79057353915">+7 (905) 735-39-15</a>
                         </div>
-                        
+
                         <button className='app_mainButton navbar' onClick={handleShowModalForm}>оставить заявку</button>
                     </div>
                 )}

@@ -19,3 +19,23 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
         monospace;
 }
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: var(--navbarBgColor);
+}
+::-webkit-scrollbar-track {
+    background-color: var(--navbarBgColor);
+    border-radius: 3px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--appButtonColor);
+    border-radius: 3px;
+    border: 2px solid var(--appButtonColor);
+}
+::-webkit-scrollbar-thumb:hover {
+    border: 2px solid var(--appButtonColor);
+}
+::-webkit-scrollbar-thumb:active {
+    border: 2px solid var(--appButtonColor);
+}

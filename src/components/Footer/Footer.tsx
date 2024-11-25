@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
                     <TelephoneFill size={40} color='#14ACE9' />
                     <div className='footer_tels'>
                         <p><b>Телефон:<br /></b></p>
-                        <a>+7 (000) 000-00-00</a>
+                        <a href="tel:+79057353915">+7 (905) 735-39-15</a>
                     </div>
                 </div>
                 
@@ -27,13 +27,14 @@ const Footer: React.FC = () => {
                     <EnvelopeAtFill size={40} color='#14ACE9' />
                     <div>
                         <p><b>Контакты:</b></p>
-                        <p>met.lajn@yandex.ru</p>
+                        <a className='footer_contacts_mail_href' href="mailto:met.lajn@yandex.ru">met.lajn@yandex.ru</a>
                         <div className='footer_contacts_icons'>
-                            <a>
-                                <Telegram size={25} color='#24a1de' />
+                            <a href="https://t.me/Flagman_60" target="_blank" rel="noopener noreferrer">
+                                <Telegram size={25} color="#24a1de"/>
                             </a>
-                            <a>
-                                <Whatsapp size={25} color='#12AF0A' />
+
+                            <a href='https://wa.me/79057353915' target="_blank" rel="noopener noreferrer">
+                                <Whatsapp size={25} color='#12AF0A'/>
                             </a>
                         </div>
                     </div>

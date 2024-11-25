@@ -25,6 +25,11 @@
         .footer_tels {
             display: flex;
             flex-direction: column;
+
+            > a {
+                text-decoration: none;
+                color: #000;
+            }
         }
     }
     
@@ -58,6 +63,11 @@
                 }
             }
         }
+    }
+
+    .footer_contacts_mail_href {
+        text-decoration: none;
+        color: #000;
     }
     
     .footer_developers_container {

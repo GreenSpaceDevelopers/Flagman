@@ -6,6 +6,7 @@
     flex-direction: column;
     text-align: center;
     color: var(--appMainColor);
+    margin-top: 50px;
     
     > p {
         font-size: clamp(18px, 3vw, 50px);

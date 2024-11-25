@@ -2,7 +2,7 @@ import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './SimpleSlider.css'
-import header1 from '../../assets/images/bgImages/header1.jpg';
+import header1 from '../../assets/images/bgImages/header3.jpg';
 import header2 from '../../assets/images/bgImages/header2.jpg';
 import header3 from '../../assets/images/bgImages/header3.jpg';
 import { useEffect, useState } from 'react';
