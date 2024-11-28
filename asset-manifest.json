@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/Flagman/static/css/main.8e693075.css",
-    "main.js": "/Flagman/static/js/main.e72d94d7.js",
+    "main.css": "/Flagman/static/css/main.e6888f4c.css",
+    "main.js": "/Flagman/static/js/main.1a5f4681.js",
     "static/media/header2.jpg": "/Flagman/static/media/header2.af4cf6e2da0eb40f4aca.jpg",
     "static/media/header1.jpg": "/Flagman/static/media/header1.b4ee8d8980cff6c14e73.jpg",
+    "static/media/header4.png": "/Flagman/static/media/header4.34ae44902aad39146413.png",
     "static/media/PhotoGallery17.jpg": "/Flagman/static/media/PhotoGallery17.8510e6e3f6fa86538646.jpg",
     "static/media/PhotoGallery13.png": "/Flagman/static/media/PhotoGallery13.4d4ac46cae6e38ae77ea.png",
     "static/media/bg1.png": "/Flagman/static/media/bg1.052bdb020097dfe82b5a.png",
@@ -131,11 +132,11 @@
     "static/media/img84.webp": "/Flagman/static/media/img84.bd210a1bf8a78129ff37.webp",
     "static/media/img76.webp": "/Flagman/static/media/img76.cdcedaa461bf3cd4a8ac.webp",
     "index.html": "/Flagman/index.html",
-    "main.8e693075.css.map": "/Flagman/static/css/main.8e693075.css.map",
-    "main.e72d94d7.js.map": "/Flagman/static/js/main.e72d94d7.js.map"
+    "main.e6888f4c.css.map": "/Flagman/static/css/main.e6888f4c.css.map",
+    "main.1a5f4681.js.map": "/Flagman/static/js/main.1a5f4681.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e693075.css",
-    "static/js/main.e72d94d7.js"
+    "static/css/main.e6888f4c.css",
+    "static/js/main.1a5f4681.js"
   ]
 }
