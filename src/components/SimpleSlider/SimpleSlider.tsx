@@ -2,9 +2,10 @@ import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './SimpleSlider.css'
-import header1 from '../../assets/images/bgImages/header3.jpg';
+import header1 from '../../assets/images/bgImages/header1.jpg';
 import header2 from '../../assets/images/bgImages/header2.jpg';
 import header3 from '../../assets/images/bgImages/header3.jpg';
+import header4 from '../../assets/images/bgImages/header4.png';
 import { useEffect, useState } from 'react';
 import MyModal from '../MyModal/MyModal';
 import MyForm from '../MyForm/MyForm';
@@ -46,13 +47,14 @@ const SimpleSlider: React.FC = () => {
                 ) : (
                     <>
                         <Slider {...settings} className='SimpleSlider'>
-                            <img src={header1} alt="Slide 1" className="SimpleSlider_img one" />
-                            <img src={header2} alt="Slide 2" className="SimpleSlider_img two" />
-                            <img src={header3} alt="Slide 2" className="SimpleSlider_img three" />
+                            <img src={header4} alt="Slide 2" className="SimpleSlider_img four"/>
+                            <img src={header2} alt="Slide 2" className="SimpleSlider_img two"/>
+                            <img src={header1} alt="Slide 1" className="SimpleSlider_img one"/>
+                            <img src={header3} alt="Slide 2" className="SimpleSlider_img three"/>
                         </Slider>
-                        
+
                         <div className='SimpleSlider_wrapperContent'>
-                            <h2>
+                        <h2>
                                 СТЕЛЛАЖНОЕ ОБОРУДОВАНИЕ <br />
                                 ДЛЯ ВАШЕГО БИЗНЕСА
                             </h2>
