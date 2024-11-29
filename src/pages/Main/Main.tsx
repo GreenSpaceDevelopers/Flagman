@@ -3,13 +3,19 @@ import PhotoGallery from '../../components/PhotoGallery/PhotoGallery';
 import './Main.css';
 import useIntersectionObserver from '../../Hooks/useIntersectionObserver';
 import SimpleSlider from '../../components/SimpleSlider/SimpleSlider';
+import {useEffect, useState} from "react";
 
 const Main: React.FC = () => {
+    const [isPageVisible, setPageVisible] = useState<boolean>(false);
     useIntersectionObserver('.main_companyInfo_container', 'main_companyInfo_container_animation', 0.5);
+
+    useEffect(() => {
+        setPageVisible(true);
+    }, [])
     
     return (
         <>
-            <div className="Main">
+            <div className={`Main ${isPageVisible ? 'visible' : ''}`}>
                 <header>
                     <SimpleSlider />
                 </header>

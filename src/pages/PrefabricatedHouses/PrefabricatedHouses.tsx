@@ -3,11 +3,18 @@ import './PrefabricatedHouses.css';
 
 import PhotoGallery18 from '../../assets/images/PhotoGallery/PrefabricatedHouses/PhotoGallery18.jpg';   
 import PhotoGallery19 from '../../assets/images/PhotoGallery/PrefabricatedHouses/PhotoGallery19.jpg';   
-import PhotoGallery20 from '../../assets/images/PhotoGallery/PrefabricatedHouses/PhotoGallery20.jpeg'; 
+import PhotoGallery20 from '../../assets/images/PhotoGallery/PrefabricatedHouses/PhotoGallery20.jpeg';
+import {useEffect, useState} from "react";
 
 const PrefabricatedHouses: React.FC = () => {
+    const [isPageVisible, setPageVisible] = useState<boolean>(false);
+
+    useEffect(() => {
+        setPageVisible(true);
+    }, [])
+
     return (
-        <div className="prefabricatedHouses">
+        <div className={`prefabricatedHouses ${isPageVisible ? 'visible' : ''}`}>
             <h1>Быстровозводимые дома</h1>
             
             <div className='prefabricatedHouses_block'>

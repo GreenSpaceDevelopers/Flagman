@@ -2,11 +2,16 @@
 
 .Main {
     width: 100%;
+    transition: opacity 500ms ease;
+    opacity: 0;
     > header {
         width: 100%;
         display: flex;
         justify-content: center;
     }
+}
+.Main.visible {
+    opacity: 1;
 }
 
 .main_companyInfo_container {

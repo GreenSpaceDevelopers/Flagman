@@ -35,11 +35,18 @@ import file27 from '../../assets/files/operating_manuals/Руководство 
 import file28 from '../../assets/files/operating_manuals/РЭ глубинных стеллажей.pdf';
 import file29 from '../../assets/files/operating_manuals/Инструкция_по_эксплуатации_G50_12_07_2021.pdf';
 import file30 from '../../assets/files/operating_manuals/Руководство_по_эксплуатации_и_обслуживанию_стеллажей_серии_R30_РЭ.pdf';
+import {useEffect, useState} from "react";
 
 
 const Catalogs: React.FC = () => {
+    const [isPageVisible, setPageVisible] = useState<boolean>(false);
+
+    useEffect(() => {
+        setPageVisible(true);
+    }, [])
+
     return (
-        <div className="Catalogs">
+        <div className={`Catalogs ${isPageVisible ? 'visible' : ''}`}>
             <div>
                 <div className='catalogsList'>
                     <h2>Каталоги</h2>
