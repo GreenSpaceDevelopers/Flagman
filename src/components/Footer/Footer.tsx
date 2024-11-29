@@ -14,15 +14,15 @@ const Footer: React.FC = () => {
                         <a href="tel:+79057353915">+7 (905) 735-39-15</a>
                     </div>
                 </div>
-                
+
                 <div className='footer_address_container'>
                     <GeoAltFill size={40} color='#14ACE9' />
                     <p>
-                        <b>Адрес:<br /></b> 182101, Псковская область, г. Великие Луки, 
-                        проспект Гагарина, 116Б
+                        <b>Адрес:<br /></b>
+                        <a href='https://yandex.ru/maps/-/CHAi78NN' target="_blank" rel="noopener noreferrer">182101, Псковская область, г. Великие Луки, проспект Гагарина, 116Б</a>
                     </p>
                 </div>
-                
+
                 <div className='footer_contacts_container'>
                     <EnvelopeAtFill size={40} color='#14ACE9' />
                     <div>
@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
                         </div>
                     </div>
                 </div>
-                
+
                 <div className='footer_developers_container'>
                     <div>
                         <img src={GSDevLogo} alt='GSDev' />
@@ -50,8 +50,8 @@ const Footer: React.FC = () => {
                     </div>
                 </div>
             </div>
-            
-            <p>&copy; 2024 OOO "Флагман". Все права защищены.</p>   
+
+            <p>&copy; 2024 OOO "Флагман". Все права защищены.</p>
         </footer>
     );
 }
