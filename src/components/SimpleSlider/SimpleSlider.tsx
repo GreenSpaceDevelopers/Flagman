@@ -7,17 +7,10 @@ import header2 from '../../assets/images/bgImages/header2.jpg';
 import header3 from '../../assets/images/bgImages/header3.jpg';
 import header4 from '../../assets/images/bgImages/header4.png';
 import { useEffect, useState } from 'react';
-import MyModal from '../MyModal/MyModal';
-import MyForm from '../MyForm/MyForm';
 import MyLoader from '../MyLoader/MyLoader';
 
 const SimpleSlider: React.FC = () => {
-    const [isModalFormVisible, setModalFormVisible] = useState<boolean>(false);
     const [isLoading, setLoading] = useState<boolean>(true);
-    
-    const handleShowModalForm = () => {
-        setModalFormVisible(!isModalFormVisible);
-    }
     
     useEffect(() => {
         const loadImage = new Image();
@@ -63,15 +56,21 @@ const SimpleSlider: React.FC = () => {
                                 ПРОЕКТИРУЕМ И ПОСТАВЛЯЕМ СТЕЛЛАЖИ ДЛЯ СЕКТОРОВ СОВРЕМЕННОЙ ТОРГОВЛИ, <br />
                                 РАСПРЕДЕЛИТЕЛЬНЫХ ЦЕНТРОВ И РАЗЛИЧНЫХ ВИДОВ СКЛАДОВ
                             </p>
-                            <button className='app_mainButton header' onClick={handleShowModalForm}>оставить заявку</button>
+                            <button
+                                className='app_mainButton header'
+                                onClick={() => {
+                                    const anchor = document.getElementById('MessageForm');
+                                    if (anchor) {
+                                        anchor.scrollIntoView({behavior: 'smooth', block: 'start'});
+                                    }
+                                }}
+                            >
+                                оставить заявку
+                            </button>
                         </div>
                     </>
                 )}
             </div>
-            
-            <MyModal visible={isModalFormVisible} setVisible={setModalFormVisible} onCloseModal={handleShowModalForm}>
-                <MyForm />
-            </MyModal>
         </>
     );
 };

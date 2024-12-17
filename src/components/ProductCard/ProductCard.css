@@ -47,7 +47,7 @@
         border-radius: 10px;
         > img {
             width: 100%;
-            max-height: 10px !important;
+            max-height: 400px !important;
             border: 10px;
         }
     }

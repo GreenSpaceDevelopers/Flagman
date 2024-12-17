@@ -16,10 +16,10 @@ const PrefabricatedHouses: React.FC = () => {
     return (
         <div className={`prefabricatedHouses ${isPageVisible ? 'visible' : ''}`}>
             <h1>Быстровозводимые дома</h1>
-            
+
             <div className='prefabricatedHouses_block'>
-                <img src={PhotoGallery18} alt='Быстровозводимый дом' />
-                
+                <img src={PhotoGallery18} alt='Быстровозводимый дом'/>
+
                 <p>
                     Модульные дома - одни из современных,
                     быстро возводимых конструкций. Они
@@ -30,7 +30,7 @@ const PrefabricatedHouses: React.FC = () => {
                     семьи в любых климатических условиях.
                 </p>
             </div>
-            
+
             <div className='prefabricatedHouses_block'>
                 <p>
                     Дом оснащен современными
@@ -41,11 +41,11 @@ const PrefabricatedHouses: React.FC = () => {
                     энергии по сравнению с
                     традиционными домами.
                 </p>
-                <img className='two' src={PhotoGallery19} alt='Быстровозводимый дом' />
+                <img className='two' src={PhotoGallery19} alt='Быстровозводимый дом'/>
             </div>
-            
+
             <div className='prefabricatedHouses_block'>
-                <img src={PhotoGallery20} alt='Быстровозводимый дом' />
+                <img src={PhotoGallery20} alt='Быстровозводимый дом'/>
                 <p>
                     Идеально подходит для тех,у кого мало
                     места для строительства.Они также
@@ -59,8 +59,10 @@ const PrefabricatedHouses: React.FC = () => {
                     идеально вписаться в любую среду
                 </p>
             </div>
-            
-            <MyForm />
+
+            <span id='MessageForm'>
+                <MyForm/>
+            </span>
         </div>
     );
 }

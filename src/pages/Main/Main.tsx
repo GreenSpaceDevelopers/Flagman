@@ -19,7 +19,7 @@ const Main: React.FC = () => {
                 <header>
                     <SimpleSlider />
                 </header>
-                
+
                 <main>
                     {/*<div className='main_companyInfo_container'>*/}
                     {/*    <div className='main_companyInfo_text'>*/}
@@ -35,13 +35,13 @@ const Main: React.FC = () => {
                     {/*        <img className='main_companyInfo_img' alt='Flagman' />*/}
                     {/*    </div>*/}
                     {/*</div>*/}
-                    
+
                     <div className='main_photogallery_container'>
-                        <PhotoGallery />
+                        <PhotoGallery/>
                     </div>
-                    
-                    <div className='main_from_container'>
-                        <MyForm />
+
+                    <div className='main_from_container' id='MessageForm'>
+                        <MyForm/>
                     </div>
                 </main>
             </div>

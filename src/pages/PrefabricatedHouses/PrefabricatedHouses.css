@@ -47,6 +47,10 @@
     opacity: 1;
 }
 
+#MessageForm {
+    width: 100%;
+}
+
 @media (max-width: 1265px) {
     .prefabricatedHouses_block {
         img {

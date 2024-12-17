@@ -1,0 +1,30 @@
+.myAlert {
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 400ms ease-in-out, top 800ms ease-in-out;
+    z-index: 1000;
+}
+
+.myAlert.active {
+    top: 50px;
+}
+
+.myAlertContent {
+    width: 400px;
+    background-color: #fff;
+    border: 1px solid var(--appMainColor);
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+@media (max-width: 450px) {
+    .myAlertContent {
+        width: 300px;
+        font-size: 15px;
+    }
+}

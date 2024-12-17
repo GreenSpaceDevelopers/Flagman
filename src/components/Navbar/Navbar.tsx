@@ -84,32 +84,85 @@ const Navbar = forwardRef<HTMLElement, any>((props, ref) => {
                             <a href="tel:+79057353915">+7 (905) 735-39-15</a>
                         </div>
 
-                        <button className='app_mainButton navbar' onClick={handleShowModalForm}>оставить заявку</button>
+                        <button
+                            className='app_mainButton navbar'
+                            onClick={() => {
+                                const anchor = document.getElementById('MessageForm');
+                                if (anchor) {
+                                    anchor.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                                }
+                            }}
+                        >
+                            оставить заявку
+                        </button>
                     </div>
                 )}
-                
-                {screenWidth <= 1024 && (
+
+                {screenWidth <= 1200 && (
                     <div>
                         <div>
-                            <List onClick={handleDropdownClick} size={30} color='#fff' />
+                            <List onClick={handleDropdownClick} size={30} color='#fff'/>
                         </div>
-                        
+
                         <div className={`navbar_links_container dropdown ${isDropdownVisible ? 'active' : ''}`}>
-                            <XLg onClick={handleDropdownClick} size={25} color='#fff' />
-                            <div className='navbar_link' onClick={() => {navigate('/'); handleDropdownClick()}}>главная</div>
-                            <div className='navbar_link' onClick={() => {navigate('/products'); handleDropdownClick()}}>продукция</div>
-                            <div className='navbar_link' onClick={() => {navigate('/catalogs'); handleDropdownClick()}}>каталоги</div>
-                            <div className='navbar_link' onClick={() => {navigate('/metalStructures'); handleDropdownClick()}}>металлоконструкции</div>
-                            <div className='navbar_link' onClick={() => {navigate('/houses'); handleDropdownClick()}}>быстровозводимые дома</div>
-                            <a className='navbar_link' onClick={() => handleDropdownClick()} href='https://ozm.ru/3d_tour/' target='_blank' rel="noopener noreferrer">3d тур</a>
-                            <button className='navbar_dropdownButton' onClick={() => {handleShowModalForm(); handleDropdownClick()}}>оставить заявку</button>
-                        </div> 
+                            <span>
+                                <XLg className='navbar_links_container_dropdownClouse' onClick={handleDropdownClick}
+                                     size={25} color='#fff'/>
+                            </span>
+                            <div className='navbar_link' onClick={() => {
+                                navigate('/');
+                                handleDropdownClick()
+                            }}>главная
+                            </div>
+                            <div className='navbar_link' onClick={() => {
+                                navigate('/products');
+                                handleDropdownClick()
+                            }}>продукция
+                            </div>
+                            <div className='navbar_link' onClick={() => {
+                                navigate('/catalogs');
+                                handleDropdownClick()
+                            }}>каталоги
+                            </div>
+                            <div className='navbar_link' onClick={() => {
+                                navigate('/metalStructures');
+                                handleDropdownClick()
+                            }}>металлоконструкции
+                            </div>
+                            <div className='navbar_link' onClick={() => {
+                                navigate('/houses');
+                                handleDropdownClick()
+                            }}>быстровозводимые дома
+                            </div>
+                            <a className='navbar_link' onClick={() => handleDropdownClick()}
+                               href='https://ozm.ru/3d_tour/' target='_blank' rel="noopener noreferrer">3d тур</a>
+
+                            <span className='navbar_dropdownButton_span'>
+                                <a className='navbar_dropdownButtonTel' href="tel:+79057353915">+7 (905) 735-39-15</a>
+                            </span>
+
+                            <span className='navbar_dropdownButton_span'>
+                                <button
+                                    className='navbar_dropdownButton'
+                                    onClick={() => {
+                                        const anchor = document.getElementById('MessageForm');
+                                        if (anchor) {
+                                            anchor.scrollIntoView({behavior: 'smooth', block: 'start'});
+                                        }
+                                        handleDropdownClick();
+                                    }}
+                                >
+                                    оставить заявку
+                                </button>
+
+                            </span>
+                        </div>
                     </div>
                 )}
             </nav>
-            
+
             <MyModal visible={isModalFormVisible} setVisible={setModalFormVisible} onCloseModal={handleShowModalForm}>
-                <MyForm />
+                <MyForm/>
             </MyModal>
         </>
     );
