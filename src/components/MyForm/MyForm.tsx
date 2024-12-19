@@ -25,35 +25,35 @@ const MyForm: React.FC = () => {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setDisabled(true);
-        
-        if (!phone || !name || !email) {
-            setAlertMessage(`Заполните обязательные поля для создания заявки:\nИмя, Номер телефона, Email`);
-            setInfoAlertVisible(true);
-            return;
-        }
-        
-        if (!isPhoneNumberValid(phone)) {
-            setAlertMessage('Номер телефона не соотвествует международному формату!');
-            setInfoAlertVisible(true);
-            return;
-        }
-        
-        if (!isEmailValid(email)) {
-            setAlertMessage('Введите корректный адрес электронной почты!');
-            setInfoAlertVisible(true);
-            return;
-        }
-        
-        const formData = {
-            'Имя': name,
-            'Телефон': phone, 
-            'Электронная почта': email,
-            'Сопроводительное письмо': desc,
-        };
-        
+
         try {
+            if (!phone || !name || !email) {
+                setAlertMessage(`Заполните обязательные поля для создания заявки: Имя, Номер телефона, Email`);
+                setInfoAlertVisible(true);
+                return;
+            }
+
+            if (!isPhoneNumberValid(phone)) {
+                setAlertMessage('Номер телефона не соотвествует международному формату!');
+                setInfoAlertVisible(true);
+                return;
+            }
+
+            if (!isEmailValid(email)) {
+                setAlertMessage('Введите корректный адрес электронной почты!');
+                setInfoAlertVisible(true);
+                return;
+            }
+
+            const formData = {
+                'Имя': name,
+                'Телефон': phone,
+                'Электронная почта': email,
+                'Сопроводительное письмо': desc,
+            };
+
             await axios.post(
-                'https://formspree.io/f/xldrvlaq',
+                'https://formspree.io/f/xzzbnboj',
                 JSON.stringify(formData),
                 {
                     headers: {
@@ -73,9 +73,9 @@ const MyForm: React.FC = () => {
             console.error("Ошибка отправки данных:", error);
             setAlertMessage('Произошла ошибка при отправке заявки');
             setInfoAlertVisible(true);
+        } finally {
+            setDisabled(false);
         }
-
-        setDisabled(false);
     };
     
     

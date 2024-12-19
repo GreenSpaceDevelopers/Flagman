@@ -8,9 +8,9 @@ const Footer: React.FC = () => {
         <footer className="Footer">
             <div className='footer_info_container'>
                 <div className='footer_tels_container'>
-                    <TelephoneFill size={40} color='#14ACE9' />
+                    <TelephoneFill className='bootstrapIcon' size={40} color='#14ACE9' />
                     <div className='footer_tels'>
-                        <p><b>Телефон:<br /></b></p>
+                        <p><b className='footerContinerTitle'>Телефон:<br /></b></p>
                         <a href="tel:+79057353915">+7 (905) 735-39-15</a>
                     </div>
                 </div>
@@ -18,15 +18,15 @@ const Footer: React.FC = () => {
                 <div className='footer_address_container'>
                     <GeoAltFill size={40} color='#14ACE9' />
                     <p>
-                        <b>Адрес:<br /></b>
+                        <b className='footerContinerTitle'>Адрес:<br /></b>
                         <a href='https://yandex.ru/maps/-/CHAi78NN' target="_blank" rel="noopener noreferrer">182101, Псковская область, г. Великие Луки, проспект Гагарина, 116Б</a>
                     </p>
                 </div>
 
                 <div className='footer_contacts_container'>
-                    <EnvelopeAtFill size={40} color='#14ACE9' />
+                    <EnvelopeAtFill className='bootstrapIcon' size={40} color='#14ACE9' />
                     <div>
-                        <p><b>Контакты:</b></p>
+                        <p><b className='FooterContainerTitle'>Контакты:</b></p>
                         <a className='footer_contacts_mail_href' href="mailto:met.lajn@yandex.ru">met.lajn@yandex.ru</a>
                         <div className='footer_contacts_icons'>
                             <a href="https://t.me/Flagman_60" target="_blank" rel="noopener noreferrer">
@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
                     <div>
                         <img src={GSDevLogo} alt='GSDev' />
                         <div>
-                            <p><b>Студия разработки:</b></p>
+                            <p><b className='footerContinerTitle'>Студия разработки:</b></p>
                             <a href='https://greenspacedev.ru/' target='_blank' rel="noopener noreferrer">GreenSpaceDev</a>
                         </div>
                     </div>

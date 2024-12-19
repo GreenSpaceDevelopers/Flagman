@@ -34,7 +34,7 @@ const Navbar = forwardRef<HTMLElement, any>((props, ref) => {
                     <img className='navbar_logo2' src={navText} alt='Flagman' />
                 </div>
                 
-                {screenWidth > 1200 && (
+                {screenWidth > 1300 && (
                     <div className='navbar_links_container'>
                         <div 
                             className={`navbar_link ${isActiveLink('/') ? 'active' : ''}`} 
@@ -77,7 +77,7 @@ const Navbar = forwardRef<HTMLElement, any>((props, ref) => {
                     </div> 
                 )}
                 
-                {screenWidth > 1200 && (
+                {screenWidth > 1300 && (
                     <div className='navbar_info_container'>
                         <div className='navbar_info_tel'>
                             <p>Отдел продаж</p>
@@ -98,7 +98,7 @@ const Navbar = forwardRef<HTMLElement, any>((props, ref) => {
                     </div>
                 )}
 
-                {screenWidth <= 1200 && (
+                {screenWidth <= 1300 && (
                     <div>
                         <div>
                             <List onClick={handleDropdownClick} size={30} color='#fff'/>
