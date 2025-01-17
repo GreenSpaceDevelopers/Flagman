@@ -71,6 +71,7 @@
     object-fit: cover;
     filter: brightness(0.5);
     object-position: center;
+    will-change: transform;
 }
 
 .SimpleSlider_img::before {
