@@ -3,7 +3,7 @@
 .Navbar {
     width: 100%;
     height: 10vh;
-    background-color: var(--navbarBgColor);
+    background-color: var(--navbarBgColor, #333);
     padding: 20px 5% 15px 5%;
     display: flex;
     justify-content: space-between;
@@ -15,46 +15,52 @@
 
 .navbar_logo_container {
     width: 15%;
+    max-width: 15%;
     height: 60px;
+    max-height: 60px;
     text-align: start;
     display: flex;
     align-items: center;
     gap: 10px;
     cursor: pointer;
-    
-    .navbar_logo {
-        height: 100%;
-    }
-    
-    .navbar_logo2 {
-        height: 50%;
-    }
+}
+.navbar_logo {
+    height: 100%;
+    max-height: 100%;
+}
+
+.navbar_logo2 {
+    height: 50%;
+    max-height: 50%;
 }
 
 .app_mainButton.navbar {
-    font-size: clamp(9px, 1vw, 18px);
+    font-size: 0.8vw;
 }
 
 .navbar_links_container {
     display: flex;
     align-items: center;
-    gap: 30px;
-    
-    .navbar_link {
-        text-transform: uppercase;
-        font-size: clamp(11px, 0.6vw, 20px);
-        color: var(--lightTextColor);
-        text-decoration: none;
-        cursor: pointer;
-        font-weight: bolder;
-    }
-    .navbar_link.active {
-        color: var(--appButtonColor); 
-    }
+}
+
+.navbar_link {
+    text-transform: uppercase;
+    font-size: 0.7vw;
+    color: var(--lightTextColor, #e1e1e1);
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bolder;
+    margin-right: 30px;
+}
+navbar_link:last-child {
+    margin-left: 0;
+}
+.navbar_link.active {
+    color: var(--appButtonColor, #14ACE9);
 }
 
 .navbar_links_container.dropdown {
-    background-color: var(--navbarBgColor);
+    background-color: var(--navbarBgColor, #333);
     height: 100vh;
     width: 25%;
     position: absolute;
@@ -70,46 +76,46 @@
     overflow: hidden;
     align-items: flex-start;
 
-    span {
-        width: 100%;
-        text-align: right;
-    }
-    .navbar_dropdownButton_span {
+}
+.navbar_links_container.dropdown span {
         width: 100%;
         text-align: center;
-
-        .navbar_dropdownButtonTel {
-            line-height: 20px;
-            text-decoration: none;
-            cursor: pointer;
-            color: var(--appButtonColor);
-            font-weight: 600;
-            font-size: clamp(18px, 1vw, 25px);
-        }
     }
 
-    .navbar_dropdownButtonTel {
-        width: 100%;
-    }
-    
-    > .formLink {
-        color: var(--appMainColor);
-        font-size: 120px;
-    }
-    
-    .navbar_dropdownButton {
-        padding: 8px 10px;
-        border: 2px solid var(--appButtonColor);
-        border-radius: 10px;
-        text-transform: uppercase;
-        background-color: var(--appButtonColor);
-        font-weight: 600;
-        cursor: pointer;
-        transition: all 500ms ease;
-        font-size: clamp(18px, 1vw, 20px);
-        text-decoration: none;
-        color: var(--navbarBgColor);
-    }
+.navbar_dropdownButton_span {
+    width: 100%;
+    text-align: center;
+}
+.navbar_dropdownButtonTel {
+    line-height: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--appButtonColor, #14ACE9);
+    font-weight: 600;
+    font-size: 0.6vw;
+}
+
+.navbar_dropdownButtonTel {
+    width: 100%;
+}
+
+> .formLink {
+    color: var(--appMainColor, #004456);
+    font-size: 120px;
+}
+
+.navbar_dropdownButton {
+    padding: 8px 10px;
+    border: 2px solid var(--appButtonColor, #14ACE9);
+    border-radius: 10px;
+    text-transform: uppercase;
+    background-color: var(--appButtonColor, #14ACE9);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 500ms ease;
+    font-size: 0.6vw;
+    text-decoration: none;
+    color: var(--navbarBgColor, #333);
 }
 .navbar_links_container.dropdown.active {
     right: 0;
@@ -119,32 +125,27 @@
     display: flex;
     align-items: center;
     gap: 30px;
-    
-    .navbar_info_tel {
-        color: var(--lightTextColor);
-
-        p {
-            font-size: clamp(11px, 1vw, 16px);
-            line-height: 20px;
-            cursor: default;
-        }
-
-        a {
-            line-height: 20px;
-            text-decoration: none;
-            cursor: pointer;
-            color: var(--appButtonColor);
-            font-weight: 600;
-            font-size: clamp(11px, 1vw, 16px);
-        }
-    }
+}
+.navbar_info_tel {
+    color: var(--lightTextColor, #e1e1e1);
+}
+.navbar_info_tel p {
+    font-size: 0.85vw;
+    line-height: 20px;
+    cursor: default;
+}
+.navbar_info_tel a {
+    line-height: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--appButtonColor, #14ACE9);
+    font-weight: 600;
+    font-size: 0.85vw;
 }
 
 @media (max-width: 768px) {
-    .navbar_links_container {
-        .navbar_link {
-            font-size: 13px;
-        }
+    .navbar_links_container .navbar_link {
+        font-size: 13px;
     }
 }
 
@@ -173,10 +174,8 @@
         height: 35px;
         text-align: start;
     }
-    .navbar_links_container {
-        .navbar_link {
-            font-size: 10px;
-        }
+    .navbar_links_container .navbar_link {
+        font-size: 10px;
     }
     .navbar_links_container.dropdown {
         height: 100vh;
