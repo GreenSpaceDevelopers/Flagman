@@ -24,6 +24,7 @@
     gap: 10px;
     cursor: pointer;
 }
+
 .navbar_logo {
     height: 100%;
     max-height: 100%;
@@ -52,9 +53,11 @@
     font-weight: bolder;
     margin-right: 30px;
 }
+
 navbar_link:last-child {
     margin-left: 0;
 }
+
 .navbar_link.active {
     color: var(--appButtonColor, #14ACE9);
 }
@@ -75,17 +78,18 @@ navbar_link:last-child {
     transition: right 0.5s ease;
     overflow: hidden;
     align-items: flex-start;
-
 }
+
 .navbar_links_container.dropdown span {
-        width: 100%;
-        text-align: center;
-    }
+    width: 100%;
+    text-align: center;
+}
 
 .navbar_dropdownButton_span {
     width: 100%;
     text-align: center;
 }
+
 .navbar_dropdownButtonTel {
     line-height: 20px;
     text-decoration: none;
@@ -126,14 +130,17 @@ navbar_link:last-child {
     align-items: center;
     gap: 30px;
 }
+
 .navbar_info_tel {
     color: var(--lightTextColor, #e1e1e1);
 }
+
 .navbar_info_tel p {
     font-size: 0.85vw;
     line-height: 20px;
     cursor: default;
 }
+
 .navbar_info_tel a {
     line-height: 20px;
     text-decoration: none;
