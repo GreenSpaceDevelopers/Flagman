@@ -21,13 +21,13 @@
     text-align: start;
     display: flex;
     align-items: center;
-    gap: 10px;
     cursor: pointer;
 }
 
 .navbar_logo {
     height: 100%;
     max-height: 100%;
+    margin-right: 15px;
 }
 
 .navbar_logo2 {
@@ -71,7 +71,6 @@ navbar_link:last-child {
     right: -100%;
     display: flex;
     flex-direction: column;
-    gap: 30px;
     padding: 30px;
     border-radius: 0 0 0 10px;
     text-align: left;
@@ -128,11 +127,11 @@ navbar_link:last-child {
 .navbar_info_container {
     display: flex;
     align-items: center;
-    gap: 30px;
 }
 
 .navbar_info_tel {
     color: var(--lightTextColor, #e1e1e1);
+    margin-right: 30px;
 }
 
 .navbar_info_tel p {
@@ -157,15 +156,17 @@ navbar_link:last-child {
 }
 
 @media (max-width: 1024px) {
+    .navbar_links_container.dropdown span {
+        margin-bottom: 40px;
+    }
     .navbar_links_container.dropdown {
         height: 100vh;
         width: 30%;
     }
-    .navbar_links_container.dropdown {
-        gap: 40px;
-    }
     .navbar_link {
         font-size: 10px !important;
+        margin-bottom: 40px;
+        margin-right: 0;
     }
     .navbar_dropdownButtonTel {
         font-size: 13px !important;
@@ -188,11 +189,13 @@ navbar_link:last-child {
         height: 100vh;
         width: 50%;
     }
-    .navbar_links_container.dropdown {
-        gap: 40px;
-    }
     .navbar_link {
         font-size: 14px;
+        margin-bottom: 40px;
+        margin-right: 0;
+    }
+    .navbar_links_container.dropdown span {
+        margin-bottom: 40px;
     }
 }
 
@@ -201,10 +204,10 @@ navbar_link:last-child {
         height: 100vh;
         width: 100%;
     }
-    .navbar_links_container.dropdown {
-        gap: 40px;
-    }
     .navbar_link {
         font-size: 14px;
+    }
+    .navbar_links_container.dropdown {
+        border-radius: 0;
     }
 }

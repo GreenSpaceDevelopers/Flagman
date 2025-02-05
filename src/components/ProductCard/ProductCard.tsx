@@ -12,7 +12,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ imgUrl, title, desc }) => {
     const [productDescModalVisible, setProductDescModalVisible] = useState<boolean>(false);
     
     return (
-        <>
+        <span className='productCard_wrap'>
             <div className='productCard'>
                 <img src={imgUrl} alt={title} />
                 <h5>{title}</h5>
@@ -33,7 +33,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ imgUrl, title, desc }) => {
                     </div>
                 </div>
             </MyModal>
-        </>
+        </span>
     );
 }
 

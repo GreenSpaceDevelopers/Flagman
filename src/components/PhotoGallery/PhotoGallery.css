@@ -19,7 +19,6 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     justify-content: center;
     margin-top: 30px;
     margin-bottom: 50px;
@@ -37,6 +36,7 @@
     opacity: 0;
     transform: translateY(100px);
     transition: opacity 800ms ease, transform 800ms ease;
+    margin: 10px;
 }
 
 .PhotoGallery_mainTitle {

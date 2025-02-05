@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
                 </div>
 
                 <div className='footer_address_container'>
-                    <GeoAltFill size={40} color='#14ACE9' />
+                    <GeoAltFill className='bootstrapIcon' size={40} color='#14ACE9' />
                     <p>
                         <b className='footerContinerTitle'>Адрес:<br /></b>
                         <a href='https://yandex.ru/maps/-/CHAi78NN' target="_blank" rel="noopener noreferrer">182101, Псковская область, г. Великие Луки, проспект Гагарина, 116Б</a>

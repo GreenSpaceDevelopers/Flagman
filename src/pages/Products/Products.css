@@ -23,7 +23,6 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 2%;
 }
 
 .catalogItems h2 {
@@ -55,7 +54,6 @@
     width: 100%;
     margin-top: 3%;
     display: flex;
-    gap: 10px;
     justify-content: center;
     cursor: pointer;
     flex-wrap: wrap;
@@ -69,6 +67,7 @@
     border-radius: 8px;
     background-color: var(--appMainColor, #004456);
     box-shadow: 2px 2px 20px 2px rgba(34, 60, 80, 0.3);
+    margin: 5px;
 }
 
 .products_tabs > div a {
