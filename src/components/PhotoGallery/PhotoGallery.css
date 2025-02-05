@@ -7,12 +7,12 @@
     text-align: center;
     color: var(--appMainColor);
     margin-top: 50px;
+}
 
-    > p {
-        font-size: clamp(18px, 3vw, 50px);
-        font-weight: 600;
-        text-shadow: 1px 1px 3px rgba(0,0,0,0.51);
-    }
+.PhotoGallery > p {
+    font-size: clamp(18px, 3vw, 50px);
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.51);
 }
 
 .photoGallery_images_container {
@@ -23,20 +23,20 @@
     justify-content: center;
     margin-top: 30px;
     margin-bottom: 50px;
+}
 
-    .photoGallery_image {
-        flex: 2 0 200px;
-        width: 30%;
-        height: 300px !important;
-        border-radius: 10px;
-        object-fit: cover;
-        aspect-ratio: 4 / 3;
-        object-position: center;
-        box-shadow: 2px 2px 20px 2px rgba(34, 60, 80, 0.3);
-        opacity: 0;
-        transform: translateY(100px);
-        transition: opacity 800ms ease, transform 800ms ease;
-    }
+.photoGallery_image {
+    flex: 2 0 200px;
+    width: 30%;
+    height: 300px !important;
+    border-radius: 10px;
+    object-fit: cover;
+    aspect-ratio: 4 / 3;
+    object-position: center;
+    box-shadow: 2px 2px 20px 2px rgba(34, 60, 80, 0.3);
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 800ms ease, transform 800ms ease;
 }
 
 .PhotoGallery_mainTitle {
@@ -44,6 +44,7 @@
     transform: translateY(100px);
     transition: opacity 800ms ease, transform 800ms ease;
 }
+
 .PhotoGallery_mainTitle_animation {
     opacity: 1;
     transform: translateY(0);
@@ -54,16 +55,15 @@
     transform: translateY(100px);
     transition: opacity 800ms ease, transform 800ms ease;
 }
+
 .PhotoGallery_mainSubTitle_animation {
     opacity: 1;
     transform: translateY(0);
 }
 
-.photoGallery_images_container_animation {
-    .photoGallery_image {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.photoGallery_images_container_animation .photoGallery_image {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 @media (max-width: 480px) {
@@ -76,10 +76,8 @@
         transform: translateY(0);
     }
 
-    .photoGallery_images_container {
-        .photoGallery_image {
-            opacity: 1;
-            transform: translateY(0);
-        }
+    .photoGallery_images_container .photoGallery_image {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

@@ -14,7 +14,7 @@
 .myAlertContent {
     width: 400px;
     background-color: #fff;
-    border: 1px solid var(--appMainColor);
+    border: 1px solid var(--appMainColor, #004456);
     font-size: 18px;
     padding: 20px;
     border-radius: 5px;

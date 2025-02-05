@@ -10,75 +10,78 @@
     flex-direction: column;
     align-items: center;
     padding: 30px 0;
-    
-    input::placeholder,
-    textarea::placeholder {
-        font-size: clamp(12px, 2vw, 15px);
-    }
-    
-    >h2 {
-        font-size: clamp(20px, 5vw, 50px);
-        color: #e1e1e1;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 5);
-    }
-    
-    > p {
-        margin-top: 10px;
-        font-size: clamp(12px, 2vw, 15px);
-        color: rgb(205, 216, 223);
-        width: 70%;
-        text-align: center;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 5);
-    }
-    
-    form {
-        width: 50%;
+}
+
+.form_container input::placeholder,
+.form_container textarea::placeholder {
+    font-size: clamp(12px, 2vw, 15px);
+}
+
+.form_container h2 {
+    font-size: clamp(20px, 5vw, 50px);
+    color: #e1e1e1;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 5);
+}
+
+.form_container > p {
+    margin-top: 10px;
+    font-size: clamp(12px, 2vw, 15px);
+    color: rgb(205, 216, 223);
+    width: 70%;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 5);
+}
+
+.form_container form {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.form_container form .app_mainButton.form_submitButton {
+    flex: 1 0 50%;
+    min-height: 30px;
+}
+
+.form_container form .input.desc {
+    flex: 1 0 100%;
+    min-height: 100px;
+}
+
+.form_container form .input.name,
+.form_container form .input.tel,
+.form_container form .input.email {
+    flex: 1 0 30%;
+    min-height: 50px;
+}
+
+.form_container form .input:focus {
+    border-color: var(--appMainColor);
+    outline: none;
+}
+
+.form_container form .input {
+    border: 1px solid var(--lightTextColor);
+    border-radius: 10px;
+    padding: 5px 10px;
+    outline: none;
+    transition: all 500ms ease;
+}
+
+.form_container form .input:hover {
+    border-color: var(--appMainColor);
+}
+
+@media (max-width: 450px) {
+    .form_container form {
+        width: 85%;
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
         margin-top: 50px;
         justify-content: center;
-        
-        .input {
-            border: 1px solid var(--lightTextColor);
-            border-radius: 10px;
-            padding: 5px 10px;
-            outline: none;
-            transition: all 500ms ease;
-            &:hover {
-                border-color: var(--appMainColor);
-            }
-        }
-        .input:focus {
-            border-color: var(--appMainColor);
-            outline: none;
-        }
-        .input.name, 
-        .input.tel, 
-        .input.email {
-            flex: 1 0 30%;
-            min-height: 50px;
-        }
-        .input.desc {
-            flex: 1 0 100%;
-            min-height: 100px;
-        }
-        .app_mainButton.form_submitButton {
-            flex: 1 0 50%;
-            min-height: 30px;
-        }
-    }
-}
-
-@media (max-width: 450px) {
-    .form_container {
-        form {
-            width: 85%;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 50px;
-            justify-content: center;
-        }
     }
 }

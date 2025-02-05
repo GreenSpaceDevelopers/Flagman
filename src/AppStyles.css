@@ -7,17 +7,16 @@
 
 .app_mainButton {
     padding: 8px 10px;
-    border: 2px solid var(--appButtonColor);
+    border: 2px solid var(--appButtonColor, #14ACE9);
     border-radius: 10px;
     text-transform: uppercase;
-    background-color: var(--appButtonColor);
+    background-color: var(--appButtonColor, #14ACE9);
     font-weight: 600;
     cursor: pointer;
     transition: all 500ms ease;
     font-size: clamp(12px, 1vw, 20px);
     text-decoration: none;
-    color: var(--navbarBgColor);
-
+    color: var(--navbarBgColor, #333);
 }
 
 @media (hover: none) {
